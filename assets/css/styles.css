@@ -14,6 +14,12 @@
 /* Smooth scroll effect */
 html {
   scroll-behavior: smooth;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 /* Resets */
@@ -24,7 +30,7 @@ html {
   transition: var(--transition);
 }
 
- body {
+body, header {
   font-family: "Roboto", sans-serf;
 }
 
@@ -47,23 +53,46 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 0;
+  width: 86%;
+  margin: auto;
 }
-.logo {
-  font-size: 2rem;
-  font-weight: 500;
+.cr-logo {
+  width: 45%;
+  margin-top: 53px;
 }
 
 ul {
   display: flex;
+  flex: 1 1 0;
   justify-content: space-between;
   align-items: center;
 }
 
+.cr-nav-items {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
 .nav-item {
-  margin-left: 2rem;
+  margin-top: 59px;
 }
 
 .nav-link {
   font-weight: var(--bold-font);
+  text-align: center;
+  font: normal normal bold 19px/29px Poppins;
+  color: #FFFFFF !important;
+  opacity: 1;
+  padding: 0;
+}
+
+.cr-header-wrapper {
+  height: 1083px;
+  background:
+  linear-gradient(119deg, #04211B -5%, #051F1A76 53%, #051E1A00 100%),
+  url(../img/header-image-2.png);
+  background-size: 105% 105%;
+  background-position: -27px -18px;
 }
