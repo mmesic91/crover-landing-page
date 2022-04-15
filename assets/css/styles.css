@@ -1,98 +1,171 @@
+/* Fonts */
 
-
-/* CSS Variables */
-:root {
-  --normal-font: 400;
-  --bold-font: 600;
-  --bolder-font: 900;
-  --primary-color: #0652dd;
-  --secondary-color: #ea2027;
-  --line-height: 1.7rem;
-  --transition: 0.4s ease-in;
+@font-face {
+	font-family: 'Poppins Bold';
+	src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+	/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
+@font-face {
+	font-family: "termina";
+	src: url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: "termina";
+	src: url("https://use.typekit.net/af/574117/00000000000000007735b222/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/574117/00000000000000007735b222/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/574117/00000000000000007735b222/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-display: auto;
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: normal;
+}
+
+.tk-termina {
+	font-family: "termina", sans-serif;
+}
+
+
 /* Smooth scroll effect */
+
 html {
-  scroll-behavior: smooth;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+	scroll-behavior: smooth;
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+	/* Firefox */
 }
 
 html::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
+
 
 /* Resets */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  transition: var(--transition);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: var(--transition);
 }
 
-body, header {
-  font-family: "Roboto", sans-serf;
+body,
+header {
+	font-family: Poppins Bold;
 }
 
 ul li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-  text-decoration: none;
-  color: var(--primary-color);
+	text-decoration: none;
+	color: var(--primary-color);
 }
 
 a:hover {
-  color: var(--secondary-color);
-} 
+	color: var(--secondary-color);
+}
+
 
 /* NAV */
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  width: 86%;
-  margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	width: 100%;
+	position: sticky;
+	top: 0px;
+	padding: 55px 0;
+	transition-duration: 500ms;
 }
+
+.cr-nav-wrapper {
+	width: 100%;
+	display: inline-flex;
+	width: 86%;
+	margin: auto;
+}
+
 .cr-logo {
-  width: 45%;
-  margin-top: 53px;
+	width: 45%;
+	/* margin-top: 53px; */
+}
+
+img.cr-logo-image {
+	content: url('../img/crover-logo.png');
 }
 
 ul {
-  display: flex;
-  flex: 1 1 0;
-  justify-content: space-between;
-  align-items: center;
+	display: flex;
+	flex: 1 1 0;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .cr-nav-items {
-  display: flex;
-  width: 50%;
-  justify-content: space-around;
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+	padding-top: 10px;
 }
 
 .nav-item {
-  margin-top: 59px;
+	/* margin-top: 59px; */
 }
 
-.nav-link {
-  font-weight: var(--bold-font);
-  text-align: center;
-  font: normal normal bold 19px/29px Poppins;
-  color: #FFFFFF !important;
-  opacity: 1;
-  padding: 0;
+ul>li>a.nav-link {
+	font-weight: var(--bold-font);
+	text-align: center;
+	font: normal normal bold 19px/29px;
+	font-family: Poppins Bold;
+	color: #FFFFFF;
+	opacity: 1;
+	padding: 0;
 }
 
 .cr-header-wrapper {
-  height: 1083px;
-  background:
-  linear-gradient(119deg, #04211B -5%, #051F1A76 53%, #051E1A00 100%),
-  url(../img/header-image-2.png);
-  background-size: 105% 105%;
-  background-position: -27px -18px;
+	height: 1083px;
+	background: linear-gradient(119deg, #04211B -5%, #051F1A76 53%, #051E1A00 100%), url(../img/header-image-2.png);
+	background-size: 105% 105%;
+	background-position: -27px -18px;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translate(calc(50vw - 50%));
+	height: 76px;
+	/* UI Properties */
+	background: #F7F6F5 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	opacity: 1;
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	padding: 10px !important;
+	transition-duration: 500ms;
+}
+
+nav.sticky>div.cr-nav-wrapper>ul>li>a.nav-link {
+	font-weight: var(--bold-font);
+	text-align: center;
+	font: normal normal bold 19px/29px;
+	font-family: Poppins Bold;
+	padding: 0;
+	color: #04211B !important;
+	opacity: 0.7;
+}
+
+#navbar.sticky>div>div.cr-logo>a>img {
+	content: url('../img/crover-logo-black.svg') !important;
 }
