@@ -82,8 +82,8 @@ nav {
 	width: 100%;
 	position: sticky;
 	top: 0px;
-	padding: 57px 0;
-	transition-duration: 500ms;
+	padding: 55px 0;
+	transition-duration: 2000ms;
 }
 
 .cr-nav-wrapper {
@@ -95,11 +95,14 @@ nav {
 
 .cr-logo {
 	width: 45%;
-  padding-left: 5px;
+	/* margin-top: 53px; */
 }
 
 img.cr-logo-image {
 	content: url('../img/crover-logo.png');
+    width: 221px;
+    height: 54px;
+	transition-duration: 2000ms;
 }
 
 ul {
@@ -123,27 +126,28 @@ ul {
 ul>li>a.nav-link {
 	font-weight: var(--bold-font);
 	text-align: center;
-	font: normal normal bold 19px/29px Poppins bold;
+	font-size: 19px;
+	font-family: Poppins Bold;
 	color: #FFFFFF;
 	opacity: 0.7;
 	padding: 0;
+}
+ul>li>a.nav-link:hover {
+	color: #FFFFFF;
+	opacity: 1;
 }
 
 .cr-header-wrapper {
 	height: 1083px;
 	background: linear-gradient(119deg, #04211B -5%, #051F1A76 53%, #051E1A00 100%), url(../img/header-image-2.png);
-	background-size: 105% 105%;
-	background-position: -27px -18px;
+	background-size: cover;
+	position: relative;
 }
 
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 
 .sticky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	transform: translate(calc(50vw - 50%));
 	height: 76px;
 	/* UI Properties */
 	background: #F7F6F5 0% 0% no-repeat padding-box;
@@ -152,19 +156,31 @@ ul>li>a.nav-link {
 	backdrop-filter: blur(30px);
 	-webkit-backdrop-filter: blur(30px);
 	padding: 10px !important;
-	transition-duration: 500ms;
+	transition-duration: 2000ms;
 }
 
 nav.sticky>div.cr-nav-wrapper>ul>li>a.nav-link {
 	font-weight: var(--bold-font);
 	text-align: center;
-	font: normal normal bold 19px/29px;
+	font-size: 16px;
 	font-family: Poppins Bold;
 	padding: 0;
 	color: #04211B !important;
 	opacity: 0.7;
 }
 
+nav.sticky>div.cr-nav-wrapper>ul>li>a:hover {
+	color: #04211B !important;
+	opacity: 1;
+}
+
 #navbar.sticky>div>div.cr-logo>a>img {
 	content: url('../img/crover-logo-black.svg') !important;
+	width: 136px;
+    height: 33px;
+    margin-top: 10px;
+	transition-duration: 2000ms;
 }
+
+/* Header */
+
