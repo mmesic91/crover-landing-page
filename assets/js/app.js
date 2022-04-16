@@ -25,3 +25,13 @@ let stickyNavbar = function() {
 }
 
 stickyNavbar();
+
+function toggleMenuHamburger() {
+  var element = document.getElementById("navbar");
+  console.log(element.classList);
+  if(!element.classList.contains('responsive')){
+	element.classList.add("responsive");
+  } else {
+    element.classList.remove("responsive");
+  }
+}

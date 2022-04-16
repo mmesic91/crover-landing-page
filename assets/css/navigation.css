@@ -1,0 +1,152 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	width: 100%;
+	position: sticky;
+	top: 0px;
+	padding: 55px 0;
+	transition-duration: 2000ms;
+}
+
+.cr-nav-wrapper {
+	width: 100%;
+	display: inline-flex;
+	width: 86%;
+	margin: auto;
+}
+
+.cr-logo {
+	width: 45%;
+	/* margin-top: 53px; */
+}
+
+img.cr-logo-image {
+	content: url('../img/crover-logo.png');
+	width: 221px;
+	height: 54px;
+	transition-duration: 2000ms;
+}
+
+ul.nav-items {
+	display: flex;
+	flex: 1 1 0;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cr-nav-items {
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+	padding-top: 10px;
+}
+
+.nav-item {
+	/* margin-top: 59px; */
+}
+
+ul>li>a.nav-link {
+	font-weight: var(--bold-font);
+	text-align: center;
+	font-size: 19px;
+	font-family: Poppins Bold;
+	color: #FFFFFF;
+	opacity: 0.7;
+	padding: 0;
+}
+
+ul>li>a.nav-link:hover {
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.cr-header-wrapper {
+	height: 1083px;
+	background: linear-gradient(119deg, #04211B -5%, #051F1A76 53%, #051E1A00 100%), url(../img/header-image-2.png);
+	background-size: cover;
+	position: relative;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	height: 76px;
+	/* UI Properties */
+	background: #F7F6F5 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	opacity: 1;
+	backdrop-filter: blur(30px);
+	-webkit-backdrop-filter: blur(30px);
+	padding: 10px !important;
+	transition-duration: 2000ms;
+}
+
+nav.sticky>div>ul>li>a.nav-link {
+	font-weight: var(--bold-font);
+	text-align: center;
+	font-size: 16px;
+	font-family: Poppins Bold;
+	padding: 0;
+	color: #04211B !important;
+	opacity: 0.7;
+}
+
+nav.sticky ul>li>a:hover {
+	color: #04211B !important;
+	opacity: 1;
+}
+
+nav.sticky>div>div.cr-logo>a>img {
+	content: url('../img/crover-logo-black.svg') !important;
+	width: 136px;
+	height: 33px;
+	margin-top: 10px;
+	transition-duration: 2000ms;
+}
+
+ul.cr-mobile-nav-items {
+	display: none;
+	width: 100%;
+}
+
+ul.cr-mobile-nav-items>li>a {
+	font-size: 16px;
+}
+
+#hamburger-menu {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	#hamburger-menu {
+		display: block;
+	}
+	.cr-nav-items li {
+		display: none;
+	}
+	.cr-nav-wrapper {
+		width: 100%;
+	}
+	.responsive {
+		display: block;
+		height: auto !important;
+	}
+	.sticky {
+		height: auto;
+	}
+	.responsive .cr-mobile-nav-items {
+		display: contents;
+	}
+	.responsive .nav-item {
+		padding: 10px 0;
+	}
+	nav {
+		padding: 10px;
+	}
+	img.cr-logo-image {
+		width: 136px;
+		height: 33px;
+		margin-top: 10px;
+	}
+}
