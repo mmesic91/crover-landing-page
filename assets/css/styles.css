@@ -1,6 +1,5 @@
 @import "navigation.css";
 @import url("navigation.css");
-
 /* Fonts */
 
 @font-face {
@@ -8,6 +7,14 @@
 	src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 	/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+	font-weight: 300;
+	/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
 
 @font-face {
 	font-family: "termina";
