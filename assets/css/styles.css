@@ -1,84 +1,149 @@
 @import "navigation.css";
 @import url("navigation.css");
+
 /* Fonts */
 
 @font-face {
-	font-family: 'Poppins Bold';
-	src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
-	/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    font-family: 'Poppins Bold';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 @font-face {
-	font-family: 'Poppins';
-	src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
-	font-weight: 300;
-	/* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-
-@font-face {
-	font-family: "termina";
-	src: url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-	font-display: auto;
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: normal;
+    font-family: 'Poppins Regular';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 @font-face {
-	font-family: "termina";
-	src: url("https://use.typekit.net/af/574117/00000000000000007735b222/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/574117/00000000000000007735b222/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/574117/00000000000000007735b222/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-	font-display: auto;
-	font-style: normal;
-	font-weight: 700;
-	font-stretch: normal;
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+    font-family: "termina";
+    src: url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/1d76ab/00000000000000007735b21c/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "termina";
+    src: url("https://use.typekit.net/af/574117/00000000000000007735b222/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/574117/00000000000000007735b222/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/574117/00000000000000007735b222/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-stretch: normal;
 }
 
 .tk-termina {
-	font-family: "termina", sans-serif;
+    font-family: "termina", sans-serif;
 }
 
 
 /* Smooth scroll effect */
 
 html {
-	scroll-behavior: smooth;
-	-ms-overflow-style: none;
-	/* IE and Edge */
-	scrollbar-width: none;
-	/* Firefox */
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 html::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 
 /* Resets */
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	transition: var(--transition);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
 }
 
 body,
 header {
-	font-family: Poppins Bold;
+    font-family: Poppins Bold;
+    background-color: #fafafa;
 }
 
 ul li {
-	list-style-type: none;
+    list-style-type: none;
 }
 
 a {
-	text-decoration: none;
-	color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 a:hover {
-	color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.cr-text {
+    font-family: 'Poppins Regular';
+    font-size: 32px;
+    line-height: 0.7em;
+}
+
+.cr-container {
+    display: flex;
+    width: 80%;
+    margin: 100px auto 0;
+    align-items: center;
+    justify-content: center;
 }
 
 
+/* WELCOME */
+
+.cr-welcome {
+    position: relative;
+}
+
+.cr-welcome-img {
+    background-image: url(../img/well.JPG);
+    background-repeat: no-repeat;
+    width: 726px;
+    height: 726px;
+}
+
+.cr-orange-gardient {
+    font-size: 70px;
+    font-family: 'termina';
+    font-weight: BOLD;
+    background: transparent linear-gradient(272deg, #A8A287 0%, #F47828 100%) 0% 0% no-repeat padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cr-orange {
+    font-size: 70px;
+    font-family: 'termina';
+    font-weight: bold;
+    color: #F47828;
+}
+
+.cr-welcome-title {
+    text-indent: 0em;
+    position: absolute;
+    left: -135px;
+    line-height: 4em;
+}
+
+.cr-welcome-message {
+    font-size: 24px;
+    font-family: 'Poppins';
+    text-align: left;
+    letter-spacing: -0.24px;
+    color: #484844;
+    margin-top: 200px;
+}
