@@ -111,7 +111,7 @@ a:hover {
 }
 
 
-/* WELCOME */
+/* WELCOME Section*/
 
 .cr-lifestyle {
     width: 50%;
@@ -192,4 +192,33 @@ a:hover {
 
 .cr-specs-content p:last-child {
     font-family: 'Poppins SemiBold';
+}
+
+
+/* Membership Section*/
+
+.cr-credit-card {
+    width: 33%;
+    position: relative;
+}
+
+.cr-membership-table {
+    width: 66%;
+    display: flex;
+}
+
+.cr-credit-card-headline {
+    font-size: 50px;
+    font-family: 'termina';
+    font-weight: bold;
+    color: #A8A287;
+}
+
+.cr-credit-card-img {
+    background-image: url("../img/Credit-Card-Mockup.png");
+    width: 533px;
+    height: 355px;
+    position: absolute;
+    top: 145px;
+    left: -80px;
 }
