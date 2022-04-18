@@ -25,9 +25,28 @@ nav {
     margin: auto;
 }
 
+.cr-wave {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    left: 0;
+    bottom: 0;
+}
+
+.cr-wave-wrapper {
+    position: relative;
+}
+
+.cr-wave-header-svg {
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
 .cr-logo {
     width: 45%;
-    /* margin-top: 53px; */
 }
 
 img.cr-logo-image {
@@ -151,7 +170,7 @@ ul.cr-mobile-nav-items>li>a {
 }
 
 .cr-email-form--desktop {
-	display: unset;
+    display: unset;
 }
 
 .cr-email-form-field {
@@ -261,7 +280,7 @@ ul.cr-mobile-nav-items>li>a {
 }
 
 .cr-email-form--mobile {
-	display: none;
+    display: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -295,70 +314,57 @@ ul.cr-mobile-nav-items>li>a {
         height: 33px;
         margin-top: 10px;
     }
-
-	.cr-header-body {
-		width: 85%;
-		flex-direction: column;
-		margin-top: 50px;
-	}
-
-	.cr-header-title {
-		font: normal normal bold 36px/42px Termina;
-	}
-
-	.cr-email-form--desktop {
-		display: none;
-	}
-
-	.cr-header-subtitle {
-		font: normal normal 300 18px/25px Poppins;
-		margin-top: 10px;
-	}
-
-	.cr-header-card {
-		width: 180px;
-		height: 262px;
-	}
-
-	.cr-header-card-title {
-		font-size: 12px;
-	}
-
-	.cr-header-card-counter-value {
-		font-size: 15px;
-	}
-
-	.cr-header-card-counter-separator {
-		font-size: 15px;
-		margin: 0;
-	}
-
-	.cr-header-card-counter-label,
-	.cr-header-card-counter-hint {
-		font-size: 6px;
-	}
-
-	.cr-header-body-cards {
-		margin-left: -60px;
-    	margin-top: 35px;
-		flex: unset;
-		height: 270px;
-	}
-
-	.cr-email-form--mobile {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.cr-email-form-field {
-		margin-top: 40px;
-		width: 100%;
-		height: 63px;
-	}
-
-	.cr-email-form-btn--mobile {
-		margin-left: 0;
-		width: 100%;
-		margin-top: 15px;
-	}
+    .cr-header-body {
+        width: 85%;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .cr-header-title {
+        font: normal normal bold 36px/42px Termina;
+    }
+    .cr-email-form--desktop {
+        display: none;
+    }
+    .cr-header-subtitle {
+        font: normal normal 300 18px/25px Poppins;
+        margin-top: 10px;
+    }
+    .cr-header-card {
+        width: 180px;
+        height: 262px;
+    }
+    .cr-header-card-title {
+        font-size: 12px;
+    }
+    .cr-header-card-counter-value {
+        font-size: 15px;
+    }
+    .cr-header-card-counter-separator {
+        font-size: 15px;
+        margin: 0;
+    }
+    .cr-header-card-counter-label,
+    .cr-header-card-counter-hint {
+        font-size: 6px;
+    }
+    .cr-header-body-cards {
+        margin-left: -60px;
+        margin-top: 35px;
+        flex: unset;
+        height: 270px;
+    }
+    .cr-email-form--mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    .cr-email-form-field {
+        margin-top: 40px;
+        width: 100%;
+        height: 63px;
+    }
+    .cr-email-form-btn--mobile {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 15px;
+    }
 }

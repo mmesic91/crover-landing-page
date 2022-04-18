@@ -1,0 +1,59 @@
+/* Membership Section*/
+
+.cr-credit-card {
+    width: 33%;
+    position: relative;
+}
+
+.cr-membership-table {
+    width: 66%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.cr-membership-item {
+    width: 50%;
+    padding: 0 100px 65px 0;
+}
+
+.cr-membership-title {
+    font-family: 'Poppins Bold';
+    font-size: 28px;
+    color: #F47828;
+    padding-bottom: 20px;
+}
+
+.cr-membership-content {
+    font-family: 'Poppins Regular';
+    font-size: 21px;
+    color: #484844;
+}
+
+.cr-credit-card-headline {
+    font-size: 50px;
+    font-family: 'termina';
+    font-weight: bold;
+    color: #A8A287;
+}
+
+.cr-credit-card-img {
+    background-image: url("../img/Credit-Card-Mockup.png");
+    width: 533px;
+    height: 355px;
+    position: absolute;
+    top: 145px;
+    left: -80px;
+}
+
+section.cr-membership-section {
+    position: relative;
+    padding: 100px 0;
+    background-color: #edefef;
+}
+
+.cr-wave-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 300px;
+}

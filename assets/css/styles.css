@@ -1,6 +1,7 @@
 @import "navigation.css";
+@import "welcome.css";
+@import "membership.css";
 @import "section-events.css";
-@import url("navigation.css");
 
 /* Fonts */
 
@@ -104,122 +105,7 @@ a:hover {
 .cr-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     width: 80%;
     margin: 100px auto 0;
-    align-items: center;
     justify-content: center;
-}
-
-
-/* WELCOME Section*/
-
-.cr-lifestyle {
-    width: 50%;
-}
-
-.cr-welcome {
-    position: relative;
-    width: 50%;
-}
-
-.cr-specs {
-    width: 100%;
-    display: flex;
-}
-
-.cr-welcome-img {
-    background-image: url(../img/well.JPG);
-    background-repeat: no-repeat;
-    width: 726px;
-    height: 726px;
-}
-
-.cr-orange-gardient {
-    font-size: 70px;
-    font-family: 'termina';
-    font-weight: BOLD;
-    background: transparent linear-gradient(272deg, #A8A287 0%, #F47828 100%) 0% 0% no-repeat padding-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.cr-orange {
-    font-size: 70px;
-    font-family: 'termina';
-    font-weight: bold;
-    color: #F47828;
-}
-
-.cr-welcome-title {
-    text-indent: 0em;
-    position: absolute;
-    left: -135px;
-    line-height: 4em;
-}
-
-.cr-welcome-message {
-    font-size: 24px;
-    font-family: 'Poppins';
-    text-align: left;
-    letter-spacing: -0.24px;
-    color: #484844;
-    margin-top: 200px;
-}
-
-.cr-specs-title {
-    width: 33%;
-}
-
-.cr-specs-headline {
-    font-size: 49px;
-    font-family: 'termina';
-    font-weight: bold;
-    color: #A8A186;
-}
-
-.cr-specs-icon {
-    background-image: url("../img/crover-icon.png");
-    width: 139px;
-    height: 161px;
-}
-
-.cr-specs-content {
-    font-size: 24px;
-    font-family: 'Poppins Regular';
-    color: #484844;
-    width: 66%;
-}
-
-.cr-specs-content p:last-child {
-    font-family: 'Poppins SemiBold';
-}
-
-
-/* Membership Section*/
-
-.cr-credit-card {
-    width: 33%;
-    position: relative;
-}
-
-.cr-membership-table {
-    width: 66%;
-    display: flex;
-}
-
-.cr-credit-card-headline {
-    font-size: 50px;
-    font-family: 'termina';
-    font-weight: bold;
-    color: #A8A287;
-}
-
-.cr-credit-card-img {
-    background-image: url("../img/Credit-Card-Mockup.png");
-    width: 533px;
-    height: 355px;
-    position: absolute;
-    top: 145px;
-    left: -80px;
 }
