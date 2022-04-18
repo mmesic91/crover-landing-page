@@ -109,3 +109,32 @@ a:hover {
     margin: 100px auto 0;
     justify-content: center;
 }
+
+.cr-wave-top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.cr-wave-bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.cr-wave-svg-bottom {
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.cr-wave-svg-top {
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
