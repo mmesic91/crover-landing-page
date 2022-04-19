@@ -1,10 +1,8 @@
 .cr-events-section {
     display: block;
-    margin-top: 300px !important;
-    margin-bottom: 300px !important;
+    margin-top: 100px !important;
     width: 80%;
     margin: auto;
-    height: 900px;
 }
 
 .cr-events-title {
@@ -70,7 +68,7 @@
     font: normal normal normal 24px/40px Poppins;
     letter-spacing: 0px;
     color: #484844;
-    padding: 35px;
+    padding: 20px;
     border-bottom: 2px dashed #ccc;
     border-right: 2px dashed #ccc;
     position: relative;
