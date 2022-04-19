@@ -23,8 +23,8 @@ section.cr-welcome-section {
     background-image: url(../img/welcome.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 726px;
-    height: 726px;
+    width: 100%;
+    min-height: 726px;
 }
 
 .cr-orange-gardient {
@@ -85,4 +85,56 @@ section.cr-welcome-section {
 
 .cr-specs-content p:last-child {
     font-family: 'Poppins SemiBold';
+}
+
+@media screen and (max-width: 600px) {
+    .cr-lifestyle {
+        width: 100%;
+    }
+    .cr-welcome {
+        width: 100%;
+    }
+    .cr-text {
+        font-size: 18px !important;
+    }
+    .cr-welcome-img {
+        width: 100%;
+        min-height: 320px;
+    }
+    .cr-orange-gardient {
+        font-size: 28px;
+    }
+    .cr-orange {
+        font-size: 28px;
+    }
+    .cr-welcome-title {
+        position: relative;
+        line-height: 2em;
+        left: 0
+    }
+    .cr-welcome-message {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .cr-specs {
+        width: 100%;
+        display: block;
+    }
+    .cr-specs-title {
+        width: 100%;
+        display: flex;
+    }
+    .cr-specs-headline {
+        font-size: 28px;
+        min-width: 70%;
+    }
+    .cr-specs-icon {
+        width: 56px;
+        height: 64px;
+        background-size: 100%;
+    }
+    .cr-specs-content {
+        font-size: 16px;
+        width: 100%;
+    }
 }

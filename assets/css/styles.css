@@ -79,8 +79,7 @@ html::-webkit-scrollbar {
 
 body,
 header {
-    font-family: Poppins Bold;
-    background-color: #fafafa;
+    background-color: #fafafa !important;
 }
 
 ul li {
@@ -128,7 +127,7 @@ a:hover {
     overflow: hidden;
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -1px;
 }
 
 .cr-wave-svg-top {
@@ -136,5 +135,25 @@ a:hover {
     overflow: hidden;
     position: absolute;
     width: 100%;
-    top: 0;
+    top: -1;
+}
+
+#mobile-svg {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #desktop-svg {
+        display: none;
+    }
+    #mobile-svg {
+        display: block;
+    }
+    .cr-container {
+        display: block;
+        /* flex-wrap: wrap; */
+        width: 85%;
+        /* margin: 100px auto 0;
+		justify-content: center; */
+    }
 }
