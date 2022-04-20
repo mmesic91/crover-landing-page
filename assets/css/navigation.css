@@ -12,18 +12,24 @@ nav {
     align-items: center;
     padding: 0;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0px;
     padding: 55px 0;
-    transition-duration: 2000ms;
     z-index: 999;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
 }
 
 .cr-nav-wrapper {
-    width: 100%;
     display: inline-flex;
     width: 86%;
     margin: auto;
+    position: relative;
+}
+
+a#cr-logo-anchor {
+    position: absolute;
+    left: 0;
 }
 
 .cr-logo {
@@ -35,6 +41,30 @@ img.cr-logo-image {
     width: 221px;
     height: 54px;
     transition-duration: 2000ms;
+}
+
+.cr-hamburger-icon {
+    width: 30px;
+    height: 21px;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+}
+
+.cr-hamburger-icon path {
+    fill: #FAFAFA;
+}
+
+.sticky .cr-hamburger-icon path {
+    fill: #051F1A;
+}
+
+.responsive .cr-hamburger-icon {
+    transition-duration: 0.8s;
+    transition-property: transform;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg)
 }
 
 ul.nav-items {
@@ -51,9 +81,7 @@ ul.nav-items {
     padding-top: 10px;
 }
 
-.nav-item {
-    /* margin-top: 59px; */
-}
+.nav-item {}
 
 ul>li>a.nav-link {
     font-weight: var(--bold-font);
@@ -75,23 +103,24 @@ ul>li>a.nav-link:hover {
 
 .sticky {
     height: 76px;
-    /* UI Properties */
-    background: #f7f6f5 0% 0% no-repeat padding-box;
+    background: #f7f6f5 0% 0% no-repeat padding-box !important;
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     padding: 10px !important;
-    transition-duration: 2000ms;
 }
 
 nav.sticky>div>ul>li>a.nav-link {
+    color: #04211b !important;
+}
+
+nav.sticky>div.cr-nav-wrapper>ul>li>a.nav-link {
     font-weight: var(--bold-font);
     text-align: center;
     font-size: 16px;
     font-family: Poppins Bold;
     padding: 0;
-    color: #04211b !important;
     opacity: 0.7;
 }
 
@@ -105,26 +134,38 @@ nav.sticky>div>div.cr-logo>a>img {
     width: 136px;
     height: 33px;
     margin-top: 10px;
-    transition-duration: 2000ms;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
 }
 
 ul.cr-mobile-nav-items {
     display: none;
-    width: 100%;
+    height: 100%;
+    width: 86%;
+    margin-top: calc(100% / 2);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
 
 ul.cr-mobile-nav-items>li>a {
-    font-size: 16px;
+    font-size: 28px;
+    text-align: left;
+    width: 86%;
 }
 
 #hamburger-menu {
     display: none;
+    margin-top: 10px;
+    position: absolute;
+    right: 0;
 }
 
 .cr-header-body {
     display: flex;
     width: 80%;
-    margin: 100px auto 0;
+    margin: 0 auto 0;
+    padding: 200px 0;
 }
 
 .cr-header-body-details {
@@ -264,31 +305,48 @@ ul.cr-mobile-nav-items>li>a {
     display: none;
 }
 
+.responsive {
+    display: block;
+    height: auto !important;
+    background: transparent linear-gradient(155deg, #04211B 0%, #051F1A 51%, #051E1A 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(155deg, #04211B 0%, #051F1A 51%, #051E1A 100%) 0% 0% no-repeat padding-box;
+    opacity: 0.96;
+}
+
+.responsive .cr-mobile-nav {
+    flex-direction: column;
+    height: 100vh;
+}
+
+.responsive .cr-mobile-nav-items {
+    display: block;
+}
+
+.responsive .nav-item {
+    padding: 10px 0;
+    opacity: 1;
+}
+
 @media screen and (max-width: 600px) {
+    .cr-logo {
+        height: 50px;
+    }
+    #nav-items {
+        display: none;
+    }
     #hamburger-menu {
         display: block;
     }
     .cr-nav-items li {
         display: none;
     }
-    .cr-nav-wrapper {
-        width: 100%;
-    }
-    .responsive {
-        display: block;
-        height: auto !important;
-    }
+    .cr-nav-wrapper {}
     .sticky {
         height: auto;
     }
-    .responsive .cr-mobile-nav-items {
-        display: contents;
-    }
-    .responsive .nav-item {
-        padding: 10px 0;
-    }
     nav {
-        padding: 10px;
+        text-align: center;
+        padding: 30px 0;
     }
     img.cr-logo-image {
         width: 136px;
@@ -298,7 +356,8 @@ ul.cr-mobile-nav-items>li>a {
     .cr-header-body {
         width: 85%;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 0;
+        padding: 100px 0;
     }
     .cr-header-title {
         font: normal normal bold 36px/42px Termina;

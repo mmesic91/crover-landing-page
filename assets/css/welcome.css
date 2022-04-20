@@ -5,30 +5,39 @@ section.cr-welcome-section {
     margin-top: -100px;
 }
 
+.cr-text-wrapper {
+    width: 100%;
+    text-align: left;
+    padding: 40px 0;
+}
+
 .cr-lifestyle {
     width: 50%;
+    padding: 20px;
 }
 
 .cr-welcome {
+    display: flex;
     position: relative;
+    width: 100%;
+}
+
+.cr-welcome-content {
     width: 50%;
 }
 
 .cr-specs {
+    padding: 50px 0;
     width: 100%;
     display: flex;
 }
 
 .cr-welcome-img {
-    background-image: url(../img/welcome.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100%;
-    min-height: 726px;
+    max-width: 100%;
+    height: auto;
 }
 
 .cr-orange-gardient {
-    font-size: 70px;
     font-family: 'termina';
     font-weight: BOLD;
     background: transparent linear-gradient(272deg, #A8A287 0%, #F47828 100%) 0% 0% no-repeat padding-box;
@@ -37,7 +46,6 @@ section.cr-welcome-section {
 }
 
 .cr-orange {
-    font-size: 70px;
     font-family: 'termina';
     font-weight: bold;
     color: #F47828;
@@ -45,9 +53,10 @@ section.cr-welcome-section {
 
 .cr-welcome-title {
     text-indent: 0em;
-    position: absolute;
-    left: -135px;
-    line-height: 4em;
+    margin-top: 100px;
+    margin-left: -100px;
+    line-height: 1em;
+    font-size: 70px;
 }
 
 .cr-welcome-message {
@@ -56,7 +65,11 @@ section.cr-welcome-section {
     text-align: left;
     letter-spacing: -0.24px;
     color: #484844;
-    margin-top: 200px;
+    padding: 50px 0;
+}
+
+.cr-welcome-message p {
+    padding: 25px 0;
 }
 
 .cr-specs-title {
@@ -92,29 +105,32 @@ section.cr-welcome-section {
         width: 100%;
     }
     .cr-welcome {
-        width: 100%;
+        display: block;
+    }
+    .cr-text-wrapper {
+        padding: 10px 0;
     }
     .cr-text {
         font-size: 18px !important;
     }
-    .cr-welcome-img {
+    .cr-welcome-img {}
+    .cr-welcome-content {
         width: 100%;
-        min-height: 320px;
     }
-    .cr-orange-gardient {
-        font-size: 28px;
-    }
-    .cr-orange {
-        font-size: 28px;
-    }
+    .cr-orange-gardient {}
+    .cr-orange {}
     .cr-welcome-title {
-        position: relative;
-        line-height: 2em;
-        left: 0
+        font-size: 28px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-top: 50px;
     }
     .cr-welcome-message {
         font-size: 16px;
-        margin-top: 10px;
+        padding: 10px 0;
+    }
+    .cr-welcome-message p {
+        padding: 10px 0;
     }
     .cr-specs {
         width: 100%;
@@ -123,6 +139,7 @@ section.cr-welcome-section {
     .cr-specs-title {
         width: 100%;
         display: flex;
+        padding: 20px 0;
     }
     .cr-specs-headline {
         font-size: 28px;
@@ -132,9 +149,50 @@ section.cr-welcome-section {
         width: 56px;
         height: 64px;
         background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -15px px;
     }
     .cr-specs-content {
         font-size: 16px;
         width: 100%;
     }
 }
+
+
+/* ----------- Laptop Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .cr-wave-svg-bottom {
+        height: 100px !important;
+    }
+    .cr-welcome-title {
+        margin-top: 100px;
+        margin-left: -50px;
+        font-size: 45px;
+    }
+    .cr-welcome-message,
+    .cr-specs-content {
+        font-size: 18px;
+        padding: 20px 0;
+    }
+    .cr-welcome-message p {
+        padding: 10px 0;
+    }
+    .cr-text {
+        font-size: 25px !important;
+    }
+    .cr-specs-headline {
+        font-size: 35px;
+    }
+    .cr-specs-icon {
+        width: 128px;
+        height: 154px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+
+/* -----------Laptop Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}

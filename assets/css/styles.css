@@ -63,6 +63,7 @@ html {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -79,7 +80,11 @@ html::-webkit-scrollbar {
     transition: var(--transition);
 }
 
-body,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 header {
     background-color: #fafafa !important;
 }
@@ -153,9 +158,21 @@ a:hover {
     }
     .cr-container {
         display: block;
-        /* flex-wrap: wrap; */
         width: 85%;
-        /* margin: 100px auto 0;
-		justify-content: center; */
+        padding: 10px 0;
     }
 }
+
+
+/* ----------- Laptop Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .cr-wave-svg-bottom {
+        height: 100px !important;
+    }
+}
+
+
+/* -----------Laptop Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale = 0.86, maximum-scale=3.0, minimum-scale=0.86">
     <!-- Web page CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
@@ -16,7 +16,7 @@
     <nav id="navbar">
         <div class="cr-nav-wrapper">
             <div class="cr-logo">
-                <a href="#">
+                <a id="cr-logo-anchor" href="#">
                     <img class="cr-logo-image" />
                 </a>
             </div>
@@ -36,8 +36,9 @@
             </ul>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a id="hamburger-menu" href="javascript:void(0);" class="icon" onclick="showMobileMenu()">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAAWklEQVRYhe3WQQrAIBBD0dT738r2XLpWU4rotFD+A7dmRAxKwOiSVIJW7sMOM0DZeRqjyUzBYY/cAGdg3nAFAJyVJpx+ZhFN6Pa89bsmpOmALfgTvoo/IT5XAUL6RgOS9roPAAAAAElFTkSuQmCC"
-                />
+                <svg class="cr-hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="29.776" height="20.843" viewBox="0 0 29.776 20.843">
+                  <path id="menu_5_" data-name="menu (5)" d="M7.444,78.289A1.489,1.489,0,0,1,8.933,76.8H28.288a1.489,1.489,0,0,1,0,2.978H8.933A1.489,1.489,0,0,1,7.444,78.289Zm20.844,7.444H1.489a1.489,1.489,0,1,0,0,2.978h26.8a1.489,1.489,0,1,0,0-2.978Zm0,8.933h-13.4a1.489,1.489,0,1,0,0,2.978h13.4a1.489,1.489,0,1,0,0-2.978Z" transform="translate(0 -76.8)" />
+                </svg>
             </a>
         </div>
         <div class="cr-mobile-nav">
@@ -161,19 +162,19 @@
     <div class="cr-wave">
         <div class="cr-wave-wrapper">
         </div>
-        <div class="cr-wave-svg-bottom" style="height: 150px; overflow: hidden;">
+        <div class="cr-wave-svg-bottom">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                <path id="desktop-svg" d="M0.28,149.52 C52.76,6.44 127.82,39.97 328.72,149.52 L321.95,151.48 L-0.27,150.50 Z" style="stroke: none; fill: #FAFAFA;"></path>
                <path id="mobile-svg" d="M-0.84,113.00 C284.71,147.55 237.87,80.44 501.41,119.91 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FAFAFA;"></path>
                
             </svg>
         </div>
-        <div class="cr-wave-svg-bottom" style="height: 150px; overflow: hidden;">
+        <div class="cr-wave-svg-bottom">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-               <path id="desktop-svg" d="M183.13,108.06 C273.98,85.38 250.84,151.48 339.45,103.13 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FAFAFA;"></path>
+               <path id="desktop-svg" d="M214.44,90.29 C287.81,119.90 278.78,117.93 339.73,107.07 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FAFAFA;"></path>
             </svg>
         </div>
-        <div class="cr-wave-svg-bottom" style="height: 150px; overflow: hidden;">
+        <div class="cr-wave-svg-bottom">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                <path id="desktop-svg" d="M238.99,150.50 C390.24,75.50 446.10,38.98 499.72,149.52 L499.72,150.50 L238.99,149.52 Z" style="stroke: none; fill: #FAFAFA;"></path>
             </svg>
@@ -186,25 +187,31 @@
     <!-- Welcome Section -->
     <section class="cr-welcome-section">
         <div class="cr-container">
-            <div class="cr-lifestyle">
+            <div class="cr-text-wrapper">
                 <div class="cr-text">
                     <p>Lifestyle Approach to New Travel,</p>
                     <p>Living, Working, Playing and Being</p>
                 </div>
-                <div class="cr-welcome-img"></div>
             </div>
             <div class="cr-welcome">
-                <div class="cr-welcome-title">
-                    <div class="cr-orange-gardient">Welcome to the</div>
-                    <div class="cr-orange">CROVER NFT Club</div>
+                <div class="cr-lifestyle">
+                    <img class="cr-welcome-img" src="assets/img/welcome.png">
                 </div>
-                <div class="cr-welcome-message">
-                    <p>Be special and be one of the first crovers</p>
-                    <p>Welcome to our collection of 10,000 CROVER NFTs — unique digital collectibles living on the Ethereum blockchain. When you buy a CROVER NFT, you’re not simply buying an avatar or a a rare piece of art and music.</p>
-                    <p>All our NFT members will gain discounted subscription living access, substantial tourism & lifestyle benefits which will increase over time. Your CROVER can serve as your digital identity, and opens online and real life doors for you.</p>
+                <div class="cr-welcome-content">
+                    <div class="cr-welcome-title">
+                        <div class="cr-orange-gardient">Welcome to the</div>
+                        <div class="cr-orange">CROVER NFT Club</div>
+                    </div>
+                    <div class="cr-welcome-message">
+                        <p>Be special and be one of the first crovers</p>
+                        <p>Welcome to our collection of 10,000 CROVER NFTs — unique digital collectibles living on the Ethereum blockchain. When you buy a CROVER NFT, you’re not simply buying an avatar or a a rare piece of art and music.</p>
+                        <p>All our NFT members will gain discounted subscription living access, substantial tourism & lifestyle benefits which will increase over time. Your CROVER can serve as your digital identity, and opens online and real life doors for
+                            you.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="cr-specs ">
+            <div class="cr-specs">
                 <div class="cr-specs-title">
                     <div class="cr-specs-headline">The Specs</div>
                     <div class="cr-specs-icon"></div>
@@ -222,7 +229,7 @@
 
     <section class="cr-membership-section">
         <div class="cr-wave-top">
-            <div class="cr-wave-svg-top" style="height: 150px; overflow: hidden;">
+            <div class="cr-wave-svg-top">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                         <path id="desktop-svg" d="M-0.84,28.13 C244.07,-9.36 218.11,158.39 500.27,51.81 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #FAFAFA;"></path>
                      </svg>
@@ -258,7 +265,7 @@
 
         </div>
         <div class="cr-wave-bottom">
-            <div class="cr-wave-svg-bottom" style="height: 150px; overflow: hidden;">
+            <div class="cr-wave-svg-bottom">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                      <path id="desktop-svg" d="M-1.41,101.16 C189.90,240.30 266.08,-36.98 500.27,100.17 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FAFAFA;"></path>
                   </svg>
@@ -488,7 +495,8 @@
             <div class="cr-overview-title">The CROVER</div>
             <img class="cr-overview-image" src="./assets/img/overview-image.png">
             <p>Societies of the 50ies were divided into small tight-knit communities mostly comprised out of families. Over the decades this changed from families to friends in larger crowds to more self-focused egoistic performers. </p>
-            <p>Now, as we have moved into the modern digital era, people are beginning to create connected tribes on an international level - that get mixed and rebuild in new settings before they stabilise and are lasting. The modern tribes share, care and prosper together and for each other: This we call: croverism! </p>
+            <p>Now, as we have moved into the modern digital era, people are beginning to create connected tribes on an international level - that get mixed and rebuild in new settings before they stabilise and are lasting. The modern tribes share, care
+                and prosper together and for each other: This we call: croverism! </p>
             <p>Sharing comes before possession, preservation before destruction, togetherness before selfishness - croverism, the new kind of humanity.</p>
         </div>
         <div class="cr-overview-additional-info">
@@ -506,7 +514,7 @@
                 skilled people who are active in global labor markets with a high interest in smart things, technology, habitats and the metaverse (and all applied tools and services in it)
             </div>
             <div class="cr-overview-addition">
-                a new population with a sharing attitude set free to found the croverse (use of the metaverse in an optimised way, but still enjoying a free and real life offline with multitude benefits created just for them) 
+                a new population with a sharing attitude set free to found the croverse (use of the metaverse in an optimised way, but still enjoying a free and real life offline with multitude benefits created just for them)
             </div>
         </div>
     </section>
