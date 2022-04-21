@@ -47,7 +47,7 @@
 
 section.cr-membership-section {
     position: relative;
-    padding: 100px 0;
+    padding: 50px 0;
     background-color: #edefef;
 }
 
@@ -65,6 +65,7 @@ section.cr-membership-section {
     }
     .cr-credit-card-headline {
         font-size: 28px;
+        width: 70%;
     }
     .cr-credit-card-img {
         height: 200px;
@@ -72,7 +73,7 @@ section.cr-membership-section {
         left: 99px;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 220px;
+        width: 270px;
     }
     .cr-membership-table {
         width: 100%;

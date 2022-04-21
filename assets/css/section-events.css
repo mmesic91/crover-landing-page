@@ -1,4 +1,9 @@
 .cr-events-section {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+.cr-events-section-container {
     display: block;
     margin-top: 100px !important;
     width: 80%;
@@ -104,8 +109,46 @@
     border-bottom: none;
 }
 
+.cr-events-grey-box {
+    background-color: #edefef;
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.cr-events-bottom {
+    display: flex;
+    padding: 30px 0;
+}
+
+.cr-events-auction {
+    font-family: 'termina';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1em;
+    width: 33%;
+}
+
+span.cr-events-auction-time {
+    color: #F47828;
+}
+
+.cr-events-bottom-img-wrapper {
+    width: 66%;
+    position: relative;
+    height: 170px;
+}
+
+.cr-events-bottom-img {
+    position: absolute;
+    right: 0;
+    top: -116px;
+}
+
 @media screen and (max-width: 600px) {
-    .cr-events-section {
+    .cr-events-section-container {
         width: 85%;
     }
     .cr-events-title,
@@ -113,39 +156,32 @@
         font: normal normal bold 22px/28px Termina;
         text-align: left;
     }
-
     .cr-events-promo {
         margin-top: 55%;
         margin-left: -10%;
         margin-right: -10%;
     }
-
     .cr-events-promo-image {
         width: 100%;
     }
-
     .cr-events-promo-video {
         width: 80%;
         height: 100%;
         left: 10%;
         top: -70%;
     }
-
     .cr-events-logo {
         width: 148px;
         height: 93px;
         left: 50%;
         transform: translate(-50%, 0);
     }
-
     .cr-events-note-arrow {
         display: none;
     }
-
     .cr-events-notes {
         margin-top: 100px;
     }
-
     .cr-events-note {
         width: 100%;
         border-right: none;
@@ -155,7 +191,6 @@
         letter-spacing: 0px;
         border-bottom: 2px dashed #ccc !important;
     }
-
     .cr-events-note::before {
         width: 33px;
         height: 33px;
@@ -163,13 +198,26 @@
         top: 14px;
         left: 0 !important;
     }
-
     .cr-events-note:nth-child(2n) {
         border-right: none;
         padding-left: 50px;
     }
-
     .cr-events-note:last-of-type {
         border-bottom: none !important;
+    }
+    .cr-events-bottom {
+        display: block;
+    }
+    .cr-events-auction {
+        width: 100%;
+        font-size: 16px;
+    }
+    .cr-events-bottom-img-wrapper {
+        width: 100%;
+        height: 0;
+    }
+    .cr-events-bottom-img {
+        width: 100%;
+        top: 0;
     }
 }

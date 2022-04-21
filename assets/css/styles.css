@@ -144,7 +144,7 @@ a:hover {
     overflow: hidden;
     position: absolute;
     width: 100%;
-    top: -1;
+    top: -1px;
 }
 
 #mobile-svg {
