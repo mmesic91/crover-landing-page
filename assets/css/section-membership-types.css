@@ -165,6 +165,10 @@
     margin-left: 40px;
 }
 
+.cr-mt-cards {
+    display: none;
+}
+
 
 @media screen and (max-width: 600px) {
     .cr-mt-promo-block {
@@ -237,5 +241,85 @@
 
     .cr-mt-notes {
         margin-left: 0;
+    }
+
+    .cr-mt-cards {
+        display: flex;
+        width: 85%;
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .cr-mt-card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0px;
+        padding: 30px;
+    }
+    
+    .cr-mt-card-title {
+        font: normal normal bold 24px/29px Termina;
+        letter-spacing: -0.24px;
+        color: #A8A287;
+    }
+    .cr-mt-card-date {
+        font: normal normal 600 18px/24px Poppins;
+        letter-spacing: 0px;
+        color: #A8A287;
+    }
+    .cr-mt-card-price {
+        font: normal normal bold 16px/25px Termina;
+        letter-spacing: -0.32px;
+        color: #A8A287;
+        margin: 30px 0;
+    }
+
+    .cr-mt-card-highlights-label {
+        font: normal normal 600 18px/24px Poppins;
+        letter-spacing: 0px;
+        color: #04211B;
+        margin-top: 10px;
+    }
+
+    
+    .cr-mt-card-highlights-table {
+        display: block;
+        padding-top: 40px;
+        margin: 0 -9%;
+    }
+    
+    .cr-mt-card-highlights-table tr {
+        display: flex;
+    }
+    
+    .cr-mt-card-highlights-table td {
+        display: flex;
+        padding: 0 25px;
+        min-height: 55px;
+        font-weight: bold;
+        border-right: 1px dashed #A8A287;
+    }
+    
+    .cr-mt-card-highlights-table tr td:first-of-type {
+        width: 55%;
+        font: normal normal normal 14px/19px Poppins;
+    }
+    
+    .cr-mt-card-highlights-table tr td:last-of-type {
+        letter-spacing: 0px;
+        border-right: none;
+        font-weight: bold;
+    }
+    
+    .cr-mt-card-highlights-table tbody td {
+        font: normal normal normal 18px/24px;
+        align-items: center;
+    }
+    
+    .cr-mt-card-highlights-table tbody tr:nth-child(2n+1) {
+        background-color: #F7F6F5;
     }
 }
