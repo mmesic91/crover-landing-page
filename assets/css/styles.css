@@ -84,6 +84,7 @@ html::-webkit-scrollbar {
 body {
     overflow-x: hidden;
     width: 100%;
+    background: #FAFAFA !important;
 }
 
 header {

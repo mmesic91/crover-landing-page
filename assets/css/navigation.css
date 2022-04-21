@@ -16,7 +16,7 @@ nav {
     top: 0px;
     padding: 55px 0;
     z-index: 999;
-    transition-duration: 2s;
+    transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
 
@@ -98,6 +98,27 @@ ul>li>a.nav-link:hover {
     opacity: 1;
 }
 
+li.nav-item.social-icons-nav {
+    display: flex;
+}
+
+li.nav-item.social-icons-nav a {
+    opacity: 1;
+}
+
+.social-icon {
+    width: 26px;
+    height: 21px;
+}
+
+.social-icon path {
+    fill: #FAFAFA;
+}
+
+nav.sticky .social-icon path {
+    fill: #04211b;
+}
+
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 
@@ -108,7 +129,7 @@ ul>li>a.nav-link:hover {
     opacity: 1;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    padding: 10px !important;
+    padding: 10px 0 !important;
 }
 
 nav.sticky>div>ul>li>a.nav-link {
@@ -118,7 +139,7 @@ nav.sticky>div>ul>li>a.nav-link {
 nav.sticky>div.cr-nav-wrapper>ul>li>a.nav-link {
     font-weight: var(--bold-font);
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
     font-family: Poppins Bold;
     padding: 0;
     opacity: 0.7;
@@ -138,8 +159,11 @@ nav.sticky>div>div.cr-logo>a>img {
     transition-timing-function: ease-in-out;
 }
 
-ul.cr-mobile-nav-items {
+.cr-mobile-nav {
     display: none;
+}
+
+ul.cr-mobile-nav-items {
     height: 100%;
     width: 86%;
     margin-top: calc(100% / 2);
@@ -196,7 +220,8 @@ ul.cr-mobile-nav-items>li>a {
 }
 
 .cr-email-form-field {
-    font: normal normal normal 16px/40px Poppins;
+    font-family: 'Poppins SemiBold';
+    font-size: 16px;
     letter-spacing: 0px;
     color: #04211b;
     border: 0;
@@ -204,10 +229,13 @@ ul.cr-mobile-nav-items>li>a {
     height: 70px;
     width: 516px;
     margin-top: 80px;
-    padding-left: 20px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: url(../img/arrow-next.svg) no-repeat left;
+    background-color: #ffffff;
     box-shadow: 0px 10px 20px #051e1a;
     border-radius: 33px;
+    padding-left: 55px;
+    background-size: 20px;
+    background-position: 24px center;
 }
 
 .cr-email-form-btn {
@@ -307,24 +335,33 @@ ul.cr-mobile-nav-items>li>a {
 
 .responsive {
     display: block;
-    height: auto !important;
+    height: 100vh;
     background: transparent linear-gradient(155deg, #04211B 0%, #051F1A 51%, #051E1A 100%) 0% 0% no-repeat padding-box;
     background: transparent linear-gradient(155deg, #04211B 0%, #051F1A 51%, #051E1A 100%) 0% 0% no-repeat padding-box;
     opacity: 0.96;
 }
 
 .responsive .cr-mobile-nav {
+    display: block;
     flex-direction: column;
     height: 100vh;
 }
 
 .responsive .cr-mobile-nav-items {
     display: block;
+    position: relative;
 }
 
 .responsive .nav-item {
     padding: 10px 0;
     opacity: 1;
+}
+
+.cr-nav-mobile-social-icons {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 5%;
 }
 
 @media screen and (max-width: 600px) {
@@ -342,7 +379,7 @@ ul.cr-mobile-nav-items>li>a {
     }
     .cr-nav-wrapper {}
     .sticky {
-        height: auto;
+        /* height: 100vh; */
     }
     nav {
         text-align: center;
