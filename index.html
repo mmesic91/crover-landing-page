@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
     <!-- Favicons -->
+
+    <link rel="stylesheet" href="assets/js/splide-4.0.1/dist/css/splide.min.css">
     <title>Crover Landing Page</title>
 </head>
 <header class="cr-header-wrapper">
@@ -25,7 +27,7 @@
                     <a href="#about" class="nav-link" id="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#collection" class="nav-link" id="nav-link">Collection</a>
+                    <a href="#ntf-collection" class="nav-link" id="nav-link">Collection</a>
                 </li>
                 <li class="nav-item">
                     <a href="#roadmap" class="nav-link" id="nav-link">Roadmap</a>
@@ -341,187 +343,477 @@
     </section>
 
     <!-- Collection Section -->
-    <section id="collection" class="cr-collection-section">
+    <!-- <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">Slide 01</li>
+                <li class="splide__slide">Slide 02</li>
+                <li class="splide__slide">Slide 03</li>
+            </ul>
+        </div>
+    </section> -->
+    <section id="ntf-collection" class="cr-collection-section splide">
         <div class="cr-collection-title">Our NFT Collection</div>
         <div class="cr-collection-description">
             Enjoy the CROVER approach to avatar and music design that builds your digital personality in the CROVER metaverse to be translated to the real world and connected unparalleled experiences.
         </div>
-        <div class="cr-collection-cards">
-            <div class="cr-collection-card cr-collection-card--membership-available">
-                <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
-                <div class="cr-collection-card-title">Crover "Founders NFT Club" Membership</div>
-                <div class="cr-collection-card-counter">
-                    <div class="cr-collection-card-counter-hint">COMING SOON</div>
-                    <div class="cr-collection-card-counter-parts">
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Day</span>
+
+        <div class="cr-collection-cards-slider-wrapper splide__track">
+            <ul class="cr-collection-cards splide__list">
+
+                <li class="splide__slide">
+                    <div class="cr-collection-card">
+                        <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                        <div class="cr-collection-card-title">NFT Club" Membership</div>
+                        <div class="cr-collection-card-counter">
+                            <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                            <div class="cr-collection-card-counter-parts">
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Day</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Hour</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Min</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Sec</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Hour</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Min</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Sec</span>
-                        </div>
+                        <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
                     </div>
-                </div>
-                <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
-            </div>
-            <div class="cr-collection-card cr-collection-card--membership-available">
-                <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
-                <div class="cr-collection-card-title">NFT Club" Membership</div>
-                <div class="cr-collection-card-counter">
-                    <div class="cr-collection-card-counter-hint">COMING SOON</div>
-                    <div class="cr-collection-card-counter-parts">
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Day</span>
+                </li>
+                <li class="splide__slide">
+                    <div class="cr-collection-card">
+                        <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                        <div class="cr-collection-card-title">NFT Club" Membership</div>
+                        <div class="cr-collection-card-counter">
+                            <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                            <div class="cr-collection-card-counter-parts">
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Day</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Hour</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Min</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Sec</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Hour</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Min</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Sec</span>
-                        </div>
+                        <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
                     </div>
-                </div>
-                <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
-            </div>
-            <div class="cr-collection-card">
-                <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
-                <div class="cr-collection-card-title">NFT Club" Membership</div>
-                <div class="cr-collection-card-counter">
-                    <div class="cr-collection-card-counter-hint">COMING SOON</div>
-                    <div class="cr-collection-card-counter-parts">
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Day</span>
+                </li>
+                <li class="splide__slide">
+                    <div class="cr-collection-card">
+                        <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                        <div class="cr-collection-card-title">NFT Club" Membership</div>
+                        <div class="cr-collection-card-counter">
+                            <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                            <div class="cr-collection-card-counter-parts">
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Day</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Hour</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Min</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Sec</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Hour</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Min</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Sec</span>
-                        </div>
+                        <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
                     </div>
-                </div>
-                <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
-            </div>
-            <div class="cr-collection-card">
-                <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
-                <div class="cr-collection-card-title">NFT Club" Membership</div>
-                <div class="cr-collection-card-counter">
-                    <div class="cr-collection-card-counter-hint">COMING SOON</div>
-                    <div class="cr-collection-card-counter-parts">
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Day</span>
+                </li>
+                <li class="splide__slide">
+                    <div class="cr-collection-card">
+                        <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                        <div class="cr-collection-card-title">NFT Club" Membership</div>
+                        <div class="cr-collection-card-counter">
+                            <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                            <div class="cr-collection-card-counter-parts">
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Day</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Hour</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Min</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Sec</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Hour</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Min</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Sec</span>
-                        </div>
+                        <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
                     </div>
-                </div>
-                <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
-            </div>
-            <div class="cr-collection-card">
-                <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
-                <div class="cr-collection-card-title">NFT Club" Membership</div>
-                <div class="cr-collection-card-counter">
-                    <div class="cr-collection-card-counter-hint">COMING SOON</div>
-                    <div class="cr-collection-card-counter-parts">
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Day</span>
+                </li>
+                <li class="splide__slide">
+                    <div class="cr-collection-card cr-collection-card--membership-available">
+                        <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                        <div class="cr-collection-card-title">Crover "Founders NFT Club" Membership</div>
+                        <div class="cr-collection-card-counter">
+                            <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                            <div class="cr-collection-card-counter-parts">
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Day</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Hour</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Min</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Sec</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Hour</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Min</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Sec</span>
-                        </div>
+                        <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
                     </div>
-                </div>
-                <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
-            </div>
-            <div class="cr-collection-card">
-                <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
-                <div class="cr-collection-card-title">NFT Club" Membership</div>
-                <div class="cr-collection-card-counter">
-                    <div class="cr-collection-card-counter-hint">COMING SOON</div>
-                    <div class="cr-collection-card-counter-parts">
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Day</span>
+                </li>
+                <li class="splide__slide">
+                    <div class="cr-collection-card cr-collection-card--membership-available ">
+                        <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                        <div class="cr-collection-card-title">NFT Club" Membership</div>
+                        <div class="cr-collection-card-counter">
+                            <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                            <div class="cr-collection-card-counter-parts">
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Day</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Hour</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Min</span>
+                                </div>
+                                <div class="cr-collection-card-counter-separator">:</div>
+                                <div class="cr-collection-card-counter-part">
+                                    <span class="cr-collection-card-counter-value">25</span>
+                                    <span class="cr-collection-card-counter-label">Sec</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Hour</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Min</span>
-                        </div>
-                        <div class="cr-collection-card-counter-separator">:</div>
-                        <div class="cr-collection-card-counter-part">
-                            <span class="cr-collection-card-counter-value">25</span>
-                            <span class="cr-collection-card-counter-label">Sec</span>
-                        </div>
+                        <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
                     </div>
-                </div>
-                <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
-            </div>
+                </li>
+            </ul>
         </div>
+        <!-- <div class=" cr-collection-cards splide__track">
+            <div class=" splide__list">
+                <div class="cr-collection-card cr-collection-card--membership-available splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">Crover "Founders NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+                <div class="cr-collection-card cr-collection-card--membership-available splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+                <div class="cr-collection-card splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+                <div class="cr-collection-card splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+                <div class="cr-collection-card splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+                <div class="cr-collection-card splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+                <div class="cr-collection-card splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+                <div class="cr-collection-card splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+                <div class="cr-collection-card splide__slide">
+                    <img class="cr-collection-card-image" src="./assets/img/card-image-ex.png">
+                    <div class="cr-collection-card-title">NFT Club" Membership</div>
+                    <div class="cr-collection-card-counter">
+                        <div class="cr-collection-card-counter-hint">COMING SOON</div>
+                        <div class="cr-collection-card-counter-parts">
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Day</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Hour</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Min</span>
+                            </div>
+                            <div class="cr-collection-card-counter-separator">:</div>
+                            <div class="cr-collection-card-counter-part">
+                                <span class="cr-collection-card-counter-value">25</span>
+                                <span class="cr-collection-card-counter-label">Sec</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="cr-collection-card-btn-submit">BUY NOW</button>
+                </div>
+            </div>
+        </div> -->
     </section>
 
     <!-- Crover Overview Section -->
@@ -724,14 +1016,14 @@
                 </div>
             </div>
             <div class="cr-mt-notes">
-                * If you are an SME company please get in touch with us for individual pricing.<br> 
-                * NFT holders get special price offers of up to 10% on passes.
+                * If you are an SME company please get in touch with us for individual pricing.<br> * NFT holders get special price offers of up to 10% on passes.
             </div>
         </div>
     </section>
 
     <!-- Web page script -->
     <script src="assets/js/app.js"></script>
+    <script src="assets/js/splide-4.0.1/dist/js/splide.min.js"></script>
 </body>
 
 </html>

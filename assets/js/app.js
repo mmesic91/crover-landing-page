@@ -72,3 +72,16 @@ let timeCounter = function(date, elementId) {
 timeCounter("May 16, 2022 13:05:25", "cr-header-card-counter");
 timeCounter("May 16, 2022 13:05:25", "cr-header-card-counter-1");
 timeCounter("May 16, 2022 13:05:25", "cr-header-card-counter-2");
+
+
+// ntf collection slider
+document.addEventListener('DOMContentLoaded', function() {
+    var splide = new Splide('#ntf-collection', {
+        type: 'loop',
+        height: '10rem',
+        focus: 'center',
+        autoWidth: true,
+    });
+
+    splide.mount();
+});
