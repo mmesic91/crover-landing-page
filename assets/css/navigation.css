@@ -379,7 +379,7 @@ ul.cr-mobile-nav-items>li>a {
     }
     .cr-nav-wrapper {}
     .sticky {
-        /* height: 100vh; */
+        height: auto;
     }
     nav {
         text-align: center;
