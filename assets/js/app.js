@@ -91,4 +91,13 @@ document.addEventListener('DOMContentLoaded', function() {
         autoWidth: true,
     });
     roadmapEvents.mount();
+
+    var roadmapActivations = new Splide('#roadmapActivations', {
+        type: 'loop',
+        height: '10rem',
+        focus: 'center',
+        autoWidth: true,
+    });
+    roadmapActivations.mount();
+
 });
