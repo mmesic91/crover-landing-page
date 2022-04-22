@@ -65,7 +65,8 @@
 .cr-collection-card-counter-value,
 .cr-collection-card-counter-separator {
     font-size: 28px;
-    color: #04211B;;
+    color: #04211B;
+    ;
 }
 
 .cr-collection-card-counter {
@@ -77,7 +78,8 @@
 .cr-collection-card-counter-hint {
     font-size: 11px;
     font-weight: normal;
-    color: #04211B;;
+    color: #04211B;
+    ;
 }
 
 .cr-collection-card-counter-parts {
@@ -95,7 +97,8 @@
     font-weight: normal;
     text-transform: uppercase;
     opacity: 0.6;
-    color: #04211B;;
+    color: #04211B;
+    ;
 }
 
 .cr-collection-card-counter-separator {
@@ -118,33 +121,54 @@
     color: #fafafe;
 }
 
+#ntf-collection .splide__slide.is-active div {
+    background: #dee2e6;
+}
+
+#ntf-collection .splide__arrows.splide__arrows--ltr {
+    display: none;
+}
+
+#ntf-collection ul.splide__pagination.splide__pagination--ltr {
+    display: none;
+}
+
+#ntf-collection .splide__slide {
+    -webkit-tap-highlight-color: transparent;
+    width: auto !important;
+    height: auto !important;
+}
+
+#ntf-collection .cr-collection-cards-slider-wrapper {
+    padding: 25px;
+    margin-right: -150px !important;
+    width: auto;
+}
 
 @media screen and (max-width: 600px) {
+    #ntf-collection ul.splide__pagination.splide__pagination--ltr {
+        display: block;
+    }
     .cr-collection-section {
         width: 85%;
         margin-top: 100px;
     }
-
     .cr-collection-title {
         font: normal normal bold 28px/34px Termina;
         letter-spacing: -0.28px;
     }
-
     .cr-collection-description {
         width: 100%;
         font: normal normal normal 16px/26px Poppins;
         letter-spacing: -0.16px;
         margin-top: 10px;
     }
-
     .cr-collection-cards {
         margin-top: 30px;
         overflow-x: hidden;
     }
-
     .cr-collection-card {
         min-width: 315px;
         max-width: 315px;
-
     }
 }

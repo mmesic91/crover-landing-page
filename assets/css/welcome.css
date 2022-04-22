@@ -40,7 +40,7 @@ section.cr-welcome-section {
 .cr-orange-gardient {
     font-family: 'termina';
     font-weight: BOLD;
-    background: transparent linear-gradient(272deg, #A8A287 0%, #F47828 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(272deg, #F47828 0%, #A8A287 100%) 0% 0% no-repeat padding-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -51,12 +51,19 @@ section.cr-welcome-section {
     color: #F47828;
 }
 
+svg.welcome-shapes {
+    position: absolute;
+    top: -150px;
+    left: 71px;
+}
+
 .cr-welcome-title {
     text-indent: 0em;
     margin-top: 100px;
     margin-left: -100px;
     line-height: 1em;
     font-size: 70px;
+    position: relative;
 }
 
 .cr-welcome-message {
@@ -140,6 +147,9 @@ section.cr-welcome-section {
         width: 100%;
         display: flex;
         padding: 20px 0;
+    }
+    svg.welcome-shapes {
+        display: none;
     }
     .cr-specs-headline {
         font-size: 28px;
