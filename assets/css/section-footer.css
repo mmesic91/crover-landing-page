@@ -128,28 +128,34 @@
 .cr-footer-follow-us--twitter::before {
     background-image: url(../img/icon-twitter.png);
 }
+
 .cr-footer-follow-us--youtube::before {
     background-image: url(../img/icon-youtube.png);
 }
+
 .cr-footer-follow-us--discord::before {
     background-image: url(../img/icon-discord.png);
 }
+
 .cr-footer-follow-us--reddit::before {
     background-image: url(../img/icon-reddit.png);
 }
+
 .cr-footer-follow-us--facebook::before {
     background-image: url(../img/icon-facebook.png);
 }
+
 .cr-footer-follow-us--medium::before {
     background-image: url(../img/icon-medium.png);
 }
+
 .cr-footer-follow-us--instagram::before {
     background-image: url(../img/icon-instagram.png);
 }
+
 .cr-footer-follow-us--tiktok::before {
     background-image: url(../img/icon-tiktok.png);
 }
-
 
 .cr-footer-menu div:first-of-type,
 .cr-footer-follow-us div:first-of-type {
@@ -182,29 +188,24 @@
     .cr-footer-section {
         margin-bottom: 300px;
     }
-
     .cr-footer-promo-block {
         height: 540px;
         background-position: center;
     }
-
     .cr-footer-promo-details {
         width: 85%;
         margin-top: 70px;
     }
-    
     .cr-footer-promo-title {
         width: 80%;
         font: normal normal bold 28px/34px Termina;
         letter-spacing: -0.28px;
     }
-    
     .cr-footer-promo-description {
         width: 100%;
         font: normal normal normal 16px/26px Poppins;
         letter-spacing: -0.16px;
     }
-
     .cr-footer-btn-discord {
         width: 155px;
         height: 55px;
@@ -213,13 +214,11 @@
         color: #E58036;
         gap: 10px;
     }
-
     .cr-footer-wave-image {
         bottom: -70px;
         height: 220px;
         width: 125%;
     }
-
     .cr-footer-content {
         bottom: unset;
         top: 95%;
@@ -227,30 +226,55 @@
         right: 7.5%;
         width: 85%;
     }
-
     .cr-footer-info {
         flex-direction: column;
         gap: 50px;
     }
-
     .cr-footer-about-us,
-    .cr-footer-menu, 
+    .cr-footer-menu,
     .cr-footer-follow-us {
         width: 100%;
     }
-
     .cr-footer-menu {
         margin-top: 0;
     }
-
     .cr-footer-follow-us {
         justify-content: space-between;
     }
     .cr-footer-follow-us div {
         width: 40%;
     }
-
     .cr-footer-copyright {
         font-size: 16px;
+    }
+}
+
+
+/* Large Phones and tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {}
+
+
+/* tables, laptop smaller screens */
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {}
+
+
+/* ----------- Laptop Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .cr-footer-promo-title {
+        font-size: 50px;
+    }
+    .cr-footer-promo-description {
+        font-size: 18px;
+    }
+    .cr-footer-about-us {
+        width: 100%;
     }
 }
