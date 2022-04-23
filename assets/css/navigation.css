@@ -458,3 +458,47 @@ ul.cr-mobile-nav-items>li>a {
         margin-top: 15px;
     }
 }
+
+
+/* Large Phones and tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {}
+
+
+/* tables, laptop smaller screens */
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    .cr-header-title {
+        font-size: 40px;
+    }
+}
+
+
+/* Laptop and some tablets */
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .cr-header-title {
+        font-size: 50px;
+    }
+}
+
+
+/* Laptop bigger */
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .cr-header-title {
+        font-size: 50px;
+    }
+}
+
+
+/* ----------- Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) {
+    .cr-header-title {
+        font-size: 50px;
+    }
+    .cr-header-subtitle {
+        font-size: 25px;
+    }
+}

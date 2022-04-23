@@ -19,7 +19,7 @@
 }
 
 .cr-membership-icon {
-    width: auto;
+    width: 15%;
     padding-right: 20px;
 }
 
@@ -33,7 +33,7 @@ img.cr-membership-icon-img {
     font-size: 28px;
     color: #F47828;
     padding-bottom: 20px;
-    width: 80%;
+    width: 85%;
 }
 
 .cr-membership-content {
@@ -50,12 +50,11 @@ img.cr-membership-icon-img {
 }
 
 .cr-credit-card-img {
-    background-image: url("../img/Credit-Card-Mockup.png");
-    width: 533px;
-    height: 355px;
-    position: absolute;
-    top: 145px;
-    left: -80px;
+    margin-top: -25px;
+}
+
+.cr-credit-card-img img {
+    width: 75%;
 }
 
 section.cr-membership-section {
@@ -101,5 +100,61 @@ section.cr-membership-section {
     }
     .cr-membership-content {
         font-size: 16px;
+    }
+}
+
+
+/* Large Phones and tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {}
+
+
+/* tables, laptop smaller screens */
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    .cr-header-title {
+        font-size: 50px;
+    }
+}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .cr-header-title {
+        font-size: 50px;
+    }
+}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .cr-header-title {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1201px) and (min-width: 1201px) {
+    .cr-header-title {
+        font-size: 50px;
+    }
+}
+
+
+/* ----------- Laptop Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .cr-credit-card-headline {
+        font-size: 37px;
+    }
+    img.cr-membership-icon-img {
+        height: 40px;
+    }
+    .cr-membership-title {
+        font-size: 20px;
+    }
+    .cr-membership-content {
+        font-size: 18px;
     }
 }

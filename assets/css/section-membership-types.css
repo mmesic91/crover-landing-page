@@ -301,3 +301,56 @@ img.green-checkmark {
         background-color: #F7F6F5;
     }
 }
+
+
+/* Large Phones and tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {}
+
+
+/* tables, laptop smaller screens */
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+
+/* ----------- Laptop Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .cr-mt-promo-title {
+        font-size: 49px;
+    }
+    .cr-mt-promo-description {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    tr.cr-mt-overview-table-header-type {
+        font-size: 18px;
+    }
+    .cr-mt-overview-table td {
+        font-size: 14px;
+    }
+    .cr-mt-tile-title {
+        padding: 10px;
+    }
+    .cr-mt-tile-title span {
+        font-size: 14px !important;
+    }
+    .cr-mt-tile-description {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .cr-mt-tile-price {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
