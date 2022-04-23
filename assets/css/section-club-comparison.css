@@ -1,5 +1,15 @@
 .cr-club-comparison-section {
     height: 2200px;
+    position: relative;
+    margin-top: 150px;
+}
+
+.cr-club-comparison-section-wave {
+    position: absolute;
+    width: 100%;
+    top: -148px;
+    height: 150px;
+    z-index: -1;
 }
 
 .cr-club-comparison-details-container {
@@ -11,7 +21,7 @@
     background-size: contain;
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-color: #EAEAEA;
+    background-color: #edefef;
 }
 
 .cr-club-comparison-content {
@@ -66,7 +76,7 @@
 .cr-resorts-title {
     font: normal normal bold 49px/57px Termina;
     letter-spacing: -0.49px;
-    color: #F47828; 
+    color: #F47828;
 }
 
 .cr-resorts-description {
@@ -89,6 +99,7 @@
     flex-wrap: wrap;
     list-style: none;
 }
+
 .cr-resorts-description ul li {
     min-width: 20%;
     margin-right: 5%;
@@ -99,7 +110,7 @@
     content: "\2022";
     color: #F47828;
     font-weight: bold;
-    display: inline-block; 
+    display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
@@ -109,7 +120,5 @@
 }
 
 @media screen and (max-width: 600px) {
-    .cr-club-comparison-details-container {
-
-    }
+    .cr-club-comparison-details-container {}
 }

@@ -76,6 +76,8 @@ timeCounter("May 16, 2022 13:05:25", "cr-header-card-counter-2");
 
 // ntf collection slider
 document.addEventListener('DOMContentLoaded', function() {
+
+    // ntf collection slider
     var ntfCollection = new Splide('#ntf-collection', {
         type: 'loop',
         height: '10rem',
@@ -84,6 +86,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     ntfCollection.mount();
 
+    var ntfCollectionMobile = new Splide('#ntf-collection-mobile');
+    ntfCollectionMobile.mount();
+
+
+    // roadmap events slider
     var roadmapEvents = new Splide('#roadmapEvents', {
         type: 'loop',
         height: '10rem',
