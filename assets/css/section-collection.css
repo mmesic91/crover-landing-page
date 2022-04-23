@@ -121,10 +121,6 @@
     color: #fafafe;
 }
 
-#ntf-collection .splide__slide.is-active div {
-    background: #dee2e6;
-}
-
 #ntf-collection .splide__arrows.splide__arrows--ltr,
 #ntf-collection-mobile .splide__arrows.splide__arrows--ltr {
     display: none;
