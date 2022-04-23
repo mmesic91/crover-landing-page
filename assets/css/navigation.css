@@ -469,12 +469,12 @@ ul.cr-mobile-nav-items>li>a {
 
 @media only screen and (min-width: 769px) and (max-width: 900px) {
     .cr-header-title {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
 
-/* Laptop */
+/* Laptop and some tablets */
 
 @media only screen and (min-width: 901px) and (max-width: 1024px) {
     .cr-header-title {
@@ -483,15 +483,9 @@ ul.cr-mobile-nav-items>li>a {
 }
 
 
-/* Laptop */
+/* Laptop bigger */
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    .cr-header-title {
-        font-size: 50px;
-    }
-}
-
-@media only screen and (max-width: 1201px) and (min-width: 1201px) {
     .cr-header-title {
         font-size: 50px;
     }
