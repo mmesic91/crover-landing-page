@@ -146,6 +146,18 @@ span.cr-events-auction-time {
     top: -116px;
 }
 
+.cr-events-circle {
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+
+.cr-events-shapes {}
+
 @media screen and (max-width: 600px) {
     .cr-events-section-container {
         width: 85%;
