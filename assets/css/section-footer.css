@@ -1,0 +1,238 @@
+.cr-footer-section {
+    display: block;
+}
+
+.cr-footer-promo-block {
+    display: flex;
+    height: 1200px;
+    background: linear-gradient(128deg, #021E0D 15%, #061D2762 50%, #6F7B7200 100%), url(../img/footer-image.png);
+    background-size: cover;
+    position: relative;
+}
+
+.cr-footer-promo-details {
+    display: flex;
+    width: 78%;
+    margin: 200px auto 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cr-footer-promo-title {
+    display: flex;
+    font: normal normal bold 60px/72px Termina;
+    letter-spacing: -1.5px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.cr-footer-promo-description {
+    display: flex;
+    font: normal normal normal 24px/40px Poppins;
+    letter-spacing: 0px;
+    color: #fcfcfc;
+    width: 60%;
+}
+
+.cr-footer-btn-discord {
+    width: 240px;
+    height: 70px;
+    border: 0;
+    outline: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 33px;
+    background: #FAFAFA;
+    font: bold 21px/31px Poppins Bold;
+    letter-spacing: 0.84px;
+    color: #E58036;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cr-footer-wave-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.cr-footer-info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font: normal normal normal 16px/22px Poppins;
+    letter-spacing: 0px;
+    color: #042822;
+    gap: 8%;
+    position: absolute;
+    bottom: 90px;
+    left: 10%;
+}
+
+.cr-footer-about-us {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    gap: 30px;
+}
+
+.cr-footer-logo {
+    width: 220px;
+    height: 55px;
+}
+
+.cr-footer-contact div {
+    display: flex;
+    align-items: center;
+}
+
+.cr-footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: -75px;
+}
+
+.cr-footer-menu span {
+    width: 100%;
+}
+
+.cr-footer-follow-us {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cr-footer-follow-us div {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cr-footer-follow-us div::before {
+    content: " ";
+    width: 26px;
+    height: 26px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cr-footer-follow-us div:first-of-type::before {
+    display: none;
+}
+
+.cr-footer-follow-us--twitter::before {
+    background-image: url(../img/icon-twitter.png);
+}
+.cr-footer-follow-us--youtube::before {
+    background-image: url(../img/icon-youtube.png);
+}
+.cr-footer-follow-us--discord::before {
+    background-image: url(../img/icon-discord.png);
+}
+.cr-footer-follow-us--reddit::before {
+    background-image: url(../img/icon-reddit.png);
+}
+.cr-footer-follow-us--facebook::before {
+    background-image: url(../img/icon-facebook.png);
+}
+.cr-footer-follow-us--medium::before {
+    background-image: url(../img/icon-medium.png);
+}
+.cr-footer-follow-us--instagram::before {
+    background-image: url(../img/icon-instagram.png);
+}
+.cr-footer-follow-us--tiktok::before {
+    background-image: url(../img/icon-tiktok.png);
+}
+
+
+.cr-footer-menu div:first-of-type,
+.cr-footer-follow-us div:first-of-type {
+    font: normal normal bold 22px/26px Termina;
+    letter-spacing: 0px;
+    color: #042822;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cr-footer-main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    .cr-footer-section {
+        margin-bottom: 300px;
+    }
+
+    .cr-footer-promo-block {
+        height: 540px;
+        background-position: center;
+    }
+
+    .cr-footer-promo-details {
+        width: 85%;
+        margin-top: 70px;
+    }
+    
+    .cr-footer-promo-title {
+        width: 80%;
+        font: normal normal bold 28px/34px Termina;
+        letter-spacing: -0.28px;
+    }
+    
+    .cr-footer-promo-description {
+        width: 100%;
+        font: normal normal normal 16px/26px Poppins;
+        letter-spacing: -0.16px;
+    }
+
+    .cr-footer-btn-discord {
+        width: 155px;
+        height: 55px;
+        font: normal normal bold 16px/25px Poppins;
+        letter-spacing: 0px;
+        color: #E58036;
+        gap: 10px;
+    }
+
+    .cr-footer-wave-image {
+        bottom: -70px;
+        height: 220px;
+        width: 125%;
+    }
+
+    .cr-footer-info {
+        bottom: unset;
+        top: 100%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cr-footer-about-us,
+    .cr-footer-menu, 
+    .cr-footer-follow-us {
+        width: 100%;
+    }
+
+    .cr-footer-menu {
+        margin-top: 0;
+    }
+
+    .cr-footer-follow-us {
+        justify-content: space-between;
+    }
+    .cr-footer-follow-us div {
+        width: 40%;
+    }
+}

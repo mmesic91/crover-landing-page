@@ -1,0 +1,34 @@
+.cr-partners-section {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 50px auto;
+}
+
+.cr-partners-title {
+    font: normal normal bold 28px/60px Termina;
+    letter-spacing: -0.28px;
+    color: #042822;
+}
+
+.cr-partners-images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 600px) {
+    .cr-partners-section {
+        width: 85%;
+    }
+    
+    .cr-partners-title {
+        font-size: 22px;
+    }
+
+    .cr-partners-images {
+        gap: 5px 20px;
+    }
+}
