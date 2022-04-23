@@ -3,8 +3,8 @@ section.cr-roadmap-section {
 }
 
 .cr-roadmap-container {
-    padding-top: 50px;
-    background: linear-gradient(to bottom, #EAEAEA, #F7F6F5 50%, #F7F6F5);;
+    padding-top: 200px;
+    background: linear-gradient(to bottom, #EAEAEA, #F7F6F5 50%, #F7F6F5);
 }
 
 .cr-roadmap-content {
@@ -206,6 +206,12 @@ section.cr-roadmap-section {
     color: #484844;
     width: 70%;
     margin-bottom: 70px;
+}
+
+.cr-roadmap-header {
+    width: 80%;
+    position: absolute;
+    left: 10%;
 }
 
 @media screen and (max-width: 600px) {

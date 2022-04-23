@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.663" height="65.663" viewBox="0 0 65.663 65.663">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f47828"/>
+      <stop offset="1" stop-color="#a8a287"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_6368" data-name="Group 6368" transform="translate(-1003.162 -4390.523)">
+    <circle id="Ellipse_1716" data-name="Ellipse 1716" cx="32.831" cy="32.831" r="32.831" transform="translate(1003.162 4390.523)" opacity="0.1" fill="url(#linear-gradient)"/>
+    <circle id="Ellipse_1717" data-name="Ellipse 1717" cx="19.559" cy="19.559" r="19.559" transform="translate(1016.434 4403.796)" fill="url(#linear-gradient)"/>
+    <g id="check-mark-black-outline" transform="translate(1022.903 4403.311)">
+      <path id="Path_15909" data-name="Path 15909" d="M26.073,13.306,9.841,29.539a.365.365,0,0,1-.517,0L.107,20.322a.366.366,0,0,1,0-.517l2.24-2.24a.366.366,0,0,1,.517,0l6.719,6.719L23.317,10.55a.366.366,0,0,1,.517,0l2.239,2.24A.365.365,0,0,1,26.073,13.306Z" transform="translate(0)" fill="#fafafa"/>
+    </g>
+  </g>
+</svg>

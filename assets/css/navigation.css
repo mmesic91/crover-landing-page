@@ -364,6 +364,19 @@ ul.cr-mobile-nav-items>li>a {
     left: 5%;
 }
 
+.cr-sound-wave {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #CECEDF;
+    font-family: 'termina';
+    font-weight: bold;
+}
+
+.cr-sound-wave img {
+    padding-right: 15px;
+}
+
 @media screen and (max-width: 600px) {
     .cr-logo {
         height: 50px;

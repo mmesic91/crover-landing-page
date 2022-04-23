@@ -2,6 +2,7 @@
     height: 2200px;
     position: relative;
     margin-top: 150px;
+    background-color: #edefef;
 }
 
 .cr-club-comparison-section-wave {
@@ -21,7 +22,7 @@
     background-size: contain;
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    background-color: #edefef;
+    /* background-color: #edefef; */
 }
 
 .cr-club-comparison-content {
@@ -119,6 +120,50 @@
     min-width: 40%;
 }
 
+.cr-club-comparison-image-mobile {
+    display: none;
+}
+
+img.cr-club-comparison-image-mobile {
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
-    .cr-club-comparison-details-container {}
+    section.cr-club-comparison-section {
+        height: auto;
+    }
+    .cr-club-comparison-details-container {
+        display: block;
+        width: 86%;
+        margin: 0 auto;
+        padding: 150px 0;
+    }
+    .cr-club-comparison-title {
+        font-size: 28px;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .cr-club-comparison-image {
+        display: none;
+    }
+    .cr-club-comparison-image-mobile {
+        display: block;
+    }
+    .cr-club-comparison-content {
+        width: 100%;
+        display: block;
+        height: 100vh;
+    }
+    .cr-resorts-container {
+        margin: 0;
+    }
+    .cr-club-comparison-details {
+        display: block;
+    }
+    .cr-resorts-description {
+        font-size: 14px;
+    }
+    .cr-club-comparison-description {
+        font-size: 16px;
+    }
 }

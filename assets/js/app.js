@@ -107,4 +107,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     roadmapActivations.mount();
 
+
+    // instagram slider
+    var crInstagramSlider = new Splide('#crInstagramSlider', {
+        type: 'loop',
+        height: '10rem',
+        focus: 'center',
+        autoWidth: true,
+    });
+    crInstagramSlider.mount();
+
+
+
 });

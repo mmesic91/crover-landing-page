@@ -14,6 +14,18 @@
 .cr-membership-item {
     width: 50%;
     padding: 0 50px 125px 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cr-membership-icon {
+    width: auto;
+    padding-right: 20px;
+}
+
+img.cr-membership-icon-img {
+    height: 50px;
+    margin-top: -5px;
 }
 
 .cr-membership-title {
@@ -21,6 +33,7 @@
     font-size: 28px;
     color: #F47828;
     padding-bottom: 20px;
+    width: 80%;
 }
 
 .cr-membership-content {

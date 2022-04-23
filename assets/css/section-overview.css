@@ -75,14 +75,13 @@
     display: block;
     width: 66px;
     height: 66px;
-    background: url(../img/events-note-icon.svg);
+    background: url(../img/checkmark-2.svg);
     background-repeat: no-repeat;
-    background-size: 27px 20px;
+    background-size: 70px 70px;
     background-position: center;
     position: absolute;
     top: 25px;
     left: 0;
-    border: 1px solid #F47828;
     border-radius: 50%;
 }
 
