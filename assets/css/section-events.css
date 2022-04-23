@@ -146,7 +146,8 @@ span.cr-events-auction-time {
     top: -116px;
 }
 
-.cr-events-circle {
+
+/* .cr-events-circle {
     background-image: url(../img/circle.png);
     background-repeat: no-repeat;
     width: 125px;
@@ -154,7 +155,7 @@ span.cr-events-auction-time {
     position: absolute;
     top: 50px;
     left: 300px;
-}
+} */
 
 .cr-events-shapes {}
 
@@ -258,12 +259,12 @@ span.cr-events-auction-time {
     .cr-events-subtitle {
         font-size: 50px;
     }
-    .cr-events-circle {
+    /* .cr-events-circle {
         background-size: cover;
         width: 80px;
         height: 80px;
         left: 180px;
-    }
+    } */
     .cr-events-note {
         font-size: 20px;
     }

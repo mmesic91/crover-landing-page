@@ -113,3 +113,41 @@
         height: 275px;
     }
 }
+
+
+/* Large Phones and tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {}
+
+
+/* tables, laptop smaller screens */
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+
+/* ----------- Laptop Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    img.cr-instagram-promo-image {
+        width: 500px;
+    }
+    .cr-instagram-title {
+        font-size: 38px;
+    }
+    .cr-instagram-description {
+        font-size: 21px;
+    }
+    .cr-instagram-owner-signature {
+        bottom: -30px;
+    }
+}

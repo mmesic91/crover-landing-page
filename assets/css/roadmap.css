@@ -26,23 +26,20 @@ section.cr-roadmap-section {
 
 .cr-roadmap-box-date {
     font-weight: bold;
-    font-size: 2em;
-    /* font-size: 34px; */
+    font-size: 34px;
     color: #A8A287;
     opacity: 0.4;
 }
 
 .cr-roadmap-box-title {
     font-weight: bold;
-    font-size: 2.5em;
-    /* font-size: 38px; */
+    font-size: 38px;
     color: #04211B;
     padding: 1em 0;
 }
 
 .cr-roadmap-box-description {
-    /* font-size: 24px; */
-    font-size: 1.4em;
+    font-size: 24px;
     color: #041A14;
     padding: 1em 0;
     margin-right: 20%;
@@ -255,5 +252,67 @@ section.cr-roadmap-section {
     #roadmapActivations ul.splide__list {
         height: 300px;
         margin-top: 10px !important;
+    }
+}
+
+
+/* Large Phones and tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {}
+
+
+/* tables, laptop smaller screens */
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+
+/* ----------- Laptop Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .cr-roadmap-big-title {
+        font-size: 100px;
+    }
+    .cr-roadmap-small-title {
+        font-size: 39px;
+    }
+    .cr-roadmap-description {
+        font-size: 21px;
+    }
+    .cr-roadmap-box-date {
+        font-size: 29px;
+    }
+    .cr-roadmap-box-title {
+        font-size: 29px;
+    }
+    .cr-roadmap-box-description {
+        font-size: 20px;
+    }
+    .cr-roadmap-activations-title {
+        font-size: 25px;
+    }
+    .cr-roadmap-activations-subtitle {
+        font-size: 21px;
+    }
+    .cr-roadmap-activations-percentage {
+        font-size: 22px;
+        width: 115px;
+        height: 100px;
+    }
+    .cr-roadmap-activations-scale {
+        top: 20px;
+    }
+    .cr-roadmap-activations-description {
+        font-size: 18px;
+        top: 60px;
     }
 }
