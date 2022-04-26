@@ -87,10 +87,12 @@
 
 @media screen and (max-width: 600px) {
     .cr-overview-section {
-        width: 85%;
+        width: 100%;
         flex-direction: column;
         margin-top: 100px;
-        margin-bottom: 50px;
+    }
+    .cr-overview-section-wrapper {
+        display: block;
     }
     .cr-overview-basic-details {
         width: 100%;
@@ -125,11 +127,9 @@
         border-bottom: 2px dashed #ccc !important;
     }
     .cr-overview-addition::before {
-        width: 33px;
+        width: 35px;
         height: 33px;
-        background-size: 13px 10px;
-        top: 14px;
-        left: 0 !important;
+        background-size: 35px 35px;
     }
 }
 

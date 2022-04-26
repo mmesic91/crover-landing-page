@@ -22,6 +22,7 @@ section.cr-roadmap-section {
 .cr-roadmap-box-wrapper {
     margin-left: 10%;
     margin-right: 5%;
+    height: 86vh;
 }
 
 .cr-roadmap-box-date {

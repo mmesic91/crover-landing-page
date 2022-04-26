@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     ntfCollection.mount();
 
-    var ntfCollectionMobile = new Splide('#ntf-collection-mobile');
+    var ntfCollectionMobile = new Splide('#ntf-collection-mobile', );
     ntfCollectionMobile.mount();
 
 
@@ -106,6 +106,14 @@ document.addEventListener('DOMContentLoaded', function() {
         autoWidth: true,
     });
     roadmapActivations.mount();
+
+    // membership types
+
+    var membershipTypesMobile = new Splide('#membershipTypesMobile', {
+        type: 'loop',
+        padding: '5rem',
+    });
+    membershipTypesMobile.mount();
 
 
     // instagram slider

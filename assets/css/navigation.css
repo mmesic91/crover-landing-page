@@ -3,6 +3,7 @@
     height: 1083px;
     background: linear-gradient( 119deg, #04211b -5%, #051f1a76 53%, #051e1a00 100%), url(../img/header-image-2.png);
     background-size: cover;
+    background-position-x: center;
     position: relative;
 }
 

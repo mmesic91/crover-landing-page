@@ -80,12 +80,16 @@ section.cr-membership-section {
         width: 70%;
     }
     .cr-credit-card-img {
-        height: 200px;
-        top: 39px;
-        left: 99px;
+        height: 150px;
+        float: right;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 270px;
+        width: 70%;
+    }
+    .cr-credit-card-img img {
+        width: 75%;
+        float: right;
+        margin-top: -5px;
     }
     .cr-membership-table {
         width: 100%;

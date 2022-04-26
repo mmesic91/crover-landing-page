@@ -238,6 +238,9 @@ span.cr-events-auction-time {
         width: 100%;
         top: 0;
     }
+    .cr-events-grey-box {
+        height: 80%;
+    }
 }
 
 

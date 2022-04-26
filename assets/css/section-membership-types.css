@@ -172,6 +172,14 @@ img.green-checkmark {
     height: 14px;
 }
 
+.cr-mt-tiles-cards-mobile {
+    display: none;
+}
+
+#membershipTypesMobile .splide__arrows.splide__arrows--ltr {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     .cr-mt-promo-block {
         height: 628px;
@@ -205,6 +213,7 @@ img.green-checkmark {
         min-width: 256px;
     }
     .cr-mt-tile-title {
+        border-radius: 15px 15px 0 0;
         background-color: #FFFFFF;
         padding: 15px 25px;
         display: flex;
@@ -299,6 +308,29 @@ img.green-checkmark {
     }
     .cr-mt-card-highlights-table tbody tr:nth-child(2n+1) {
         background-color: #F7F6F5;
+    }
+    .cr-mt-tiles-cards {
+        display: none;
+    }
+    .cr-mt-tiles-cards-mobile {
+        display: flex;
+    }
+    #membershipTypesMobile .splide__track li {
+        width: calc(10%) !important;
+        padding: 10px;
+    }
+    #membershipTypesMobile .splide__track {
+        margin-left: 0;
+    }
+    #membershipTypesMobile .splide__pagination {
+        bottom: -2em;
+    }
+    #membershipTypesMobile .splide__pagination__page {
+        height: 16px;
+        width: 16px;
+    }
+    #membershipTypesMobile .splide__pagination__page.is-active {
+        background: #F47828;
     }
 }
 
