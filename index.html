@@ -19,7 +19,7 @@
         <div class="cr-nav-wrapper">
             <div class="cr-logo">
                 <a id="cr-logo-anchor" href="#">
-                    <img class="cr-logo-image" />
+                    <div class="cr-logo-image"></div>
                 </a>
             </div>
             <ul id="nav-items" class="cr-nav-items">
@@ -27,7 +27,7 @@
                     <a href="#about" class="nav-link" id="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#ntf-collection" class="nav-link" id="nav-link">Collection</a>
+                    <a href="#collection" class="nav-link" id="nav-link">Collection</a>
                 </li>
                 <li class="nav-item">
                     <a href="#roadmap" class="nav-link" id="nav-link">Roadmap</a>
@@ -47,7 +47,7 @@
                 </li>
             </ul>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a id="hamburger-menu" href="javascript:void(0);" class="icon" onclick="showMobileMenu()">
+            <a id="hamburger-menu" href="javascript:void(0);" class="icon" onclick="triggerMobileMenuEvent()">
                 <svg class="cr-hamburger-icon" xmlns="http://www.w3.org/2000/svg" width="29.776" height="20.843" viewBox="0 0 29.776 20.843">
                   <path id="menu_5_" data-name="menu (5)" d="M7.444,78.289A1.489,1.489,0,0,1,8.933,76.8H28.288a1.489,1.489,0,0,1,0,2.978H8.933A1.489,1.489,0,0,1,7.444,78.289Zm20.844,7.444H1.489a1.489,1.489,0,1,0,0,2.978h26.8a1.489,1.489,0,1,0,0-2.978Zm0,8.933h-13.4a1.489,1.489,0,1,0,0,2.978h13.4a1.489,1.489,0,1,0,0-2.978Z" transform="translate(0 -76.8)" />
                 </svg>
@@ -56,17 +56,15 @@
         <div class="cr-mobile-nav">
             <ul class="cr-mobile-nav-items">
                 <li class="nav-item">
-                    <a href="#about" class="nav-link" id="nav-link">About</a>
+                    <a href="#about" class="nav-link" id="nav-link" onclick="triggerMobileMenuEvent()">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#collection" class="nav-link" id="nav-link">Collection</a>
+                    <a href="#collection" class="nav-link" id="nav-link" onclick="triggerMobileMenuEvent()">Collection</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#roadmap" class="nav-link" id="nav-link">Roadmap</a>
+                    <a href="#roadmap" class="nav-link" id="nav-link" onclick="triggerMobileMenuEvent()">Roadmap</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#roadmap" class="nav-link" id="nav-link">Roadmap</a>
-                </li>
+
             </ul>
             <div class="cr-nav-mobile-social-icons">
                 <a href="#twitter" class="nav-link" id="nav-link">
@@ -1370,7 +1368,7 @@
         </div>
     </section>
 
-    <section class="cr-roadmap-section">
+    <section id="roadmap" class="cr-roadmap-section">
         <div class="cr-roadmap-header">
             <div class="cr-roadmap-big-title">Roadmap</div>
             <div class="cr-roadmap-small-title">Roadmap</div>
@@ -1505,6 +1503,33 @@
                                     <div style="background:#F47828;border-radius:12px;height:100%;width:40%"></div>
                                 </div>
                                 <div class="cr-roadmap-activations-description">We open the Subscription Living booking platform for NFT holders only</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="cr-roadmap-activation-box-sm">
+                                <div class="cr-roadmap-activations-percentage">80%</div>
+                                <div class="cr-roadmap-activations-scale">
+                                    <div style="background:#F47828;border-radius:12px;height:100%;width:80%"></div>
+                                </div>
+                                <div class="cr-roadmap-activations-description">Starting our own crypto loyalty and membership program with much more benefits, exclusive worldwide CROVER NFT events</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="cr-roadmap-activation-box-sm">
+                                <div class="cr-roadmap-activations-percentage">90%</div>
+                                <div class="cr-roadmap-activations-scale">
+                                    <div style="background:#F47828;border-radius:12px;height:100%;width:90%"></div>
+                                </div>
+                                <div class="cr-roadmap-activations-description">Whole IT infrastructure on blockchain</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="cr-roadmap-activation-box-sm">
+                                <div class="cr-roadmap-activations-percentage">100%</div>
+                                <div class="cr-roadmap-activations-scale">
+                                    <div style="background:#F47828;border-radius:12px;height:100%;width:100%"></div>
+                                </div>
+                                <div class="cr-roadmap-activations-description">We cook up new ways to crover with our friends</div>
                             </div>
                         </li>
                     </ul>

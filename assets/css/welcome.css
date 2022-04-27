@@ -171,14 +171,128 @@ svg.welcome-shapes {
 
 /* Large Phones and tablets */
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .cr-lifestyle {
+        width: 100%;
+    }
+    .cr-welcome {
+        display: block;
+    }
+    .cr-text-wrapper {
+        padding: 10px 0;
+    }
+    .cr-text {
+        font-size: 18px !important;
+    }
+    .cr-welcome-img {}
+    .cr-welcome-content {
+        width: 100%;
+    }
+    .cr-orange-gardient {}
+    .cr-orange {}
+    .cr-welcome-title {
+        font-size: 28px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-top: 50px;
+    }
+    .cr-welcome-message {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .cr-welcome-message p {
+        padding: 10px 0;
+    }
+    .cr-specs {
+        width: 100%;
+        display: block;
+    }
+    .cr-specs-title {
+        width: 100%;
+        display: flex;
+        padding: 20px 0;
+    }
+    svg.welcome-shapes {
+        display: none;
+    }
+    .cr-specs-headline {
+        font-size: 28px;
+        min-width: 70%;
+    }
+    .cr-specs-icon {
+        width: 56px;
+        height: 64px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -15px px;
+    }
+    .cr-specs-content {
+        font-size: 16px;
+        width: 100%;
+    }
+}
 
 
 /* tables, laptop smaller screens */
 
 @media only screen and (min-width: 769px) and (max-width: 900px) {
-    .cr-header-title {
-        font-size: 50px;
+    .cr-lifestyle {
+        width: 100%;
+    }
+    .cr-welcome {
+        display: block;
+    }
+    .cr-text-wrapper {
+        padding: 10px 0;
+    }
+    .cr-text {
+        font-size: 18px !important;
+    }
+    .cr-welcome-img {}
+    .cr-welcome-content {
+        width: 100%;
+    }
+    .cr-orange-gardient {}
+    .cr-orange {}
+    .cr-welcome-title {
+        font-size: 35px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-top: 50px;
+    }
+    .cr-welcome-message {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .cr-welcome-message p {
+        padding: 10px 0;
+    }
+    .cr-specs {
+        width: 100%;
+        display: block;
+    }
+    .cr-specs-title {
+        width: 100%;
+        display: flex;
+        padding: 20px 0;
+    }
+    svg.welcome-shapes {
+        display: none;
+    }
+    .cr-specs-headline {
+        font-size: 35px;
+        min-width: 70%;
+    }
+    .cr-specs-icon {
+        width: 56px;
+        height: 64px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -15px px;
+    }
+    .cr-specs-content {
+        font-size: 18px;
+        width: 100%;
     }
 }
 
@@ -186,8 +300,25 @@ svg.welcome-shapes {
 /* Laptop */
 
 @media only screen and (min-width: 901px) and (max-width: 1024px) {
-    .cr-header-title {
-        font-size: 50px;
+    .cr-text {
+        font-size: 24px;
+    }
+    .cr-welcome-title {
+        font-size: 40px;
+        margin-left: -40px;
+    }
+    .cr-welcome-message {
+        font-size: 21px;
+        letter-spacing: normal;
+    }
+    .cr-welcome-message p {
+        padding: 5px 0;
+    }
+    .cr-specs-content {
+        font-size: 21px;
+    }
+    .cr-specs-headline {
+        font-size: 40px;
     }
 }
 
@@ -195,16 +326,29 @@ svg.welcome-shapes {
 /* Laptop */
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-    .cr-header-title {
-        font-size: 50px;
+    .cr-text {
+        font-size: 24px;
+    }
+    .cr-welcome-title {
+        font-size: 40px;
+        margin-left: -40px;
+    }
+    .cr-welcome-message {
+        font-size: 21px;
+        letter-spacing: normal;
+    }
+    .cr-welcome-message p {
+        padding: 5px 0;
+    }
+    .cr-specs-content {
+        font-size: 21px;
+    }
+    .cr-specs-headline {
+        font-size: 40px;
     }
 }
 
-@media only screen and (max-width: 1201px) and (min-width: 1201px) {
-    .cr-header-title {
-        font-size: 50px;
-    }
-}
+@media only screen and (max-width: 1201px) and (min-width: 1201px) {}
 
 
 /* ----------- Laptop Non-Retina Screens ----------- */

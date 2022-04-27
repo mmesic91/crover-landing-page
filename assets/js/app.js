@@ -10,12 +10,18 @@ let stickyNavbar = function() {
     window.onscroll = function() {
         navigationHandler()
     };
+    window.touchmove = function() {
+        navigationHandler()
+    };
 
     //on init
     navigationHandler()
 
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function navigationHandler() {
+        console.log(window.pageYOffset)
+        console.log(navbarPosition)
+        console.log(window.scrollY)
         if (window.pageYOffset > navbarPosition || window.scrollY > 0) {
             navbar.classList.add("sticky");
         } else {
@@ -26,7 +32,11 @@ let stickyNavbar = function() {
 
 stickyNavbar();
 
-function showMobileMenu() {
+// window.onscroll = function() {
+//     console.log("scroll");
+// };
+
+function triggerMobileMenuEvent() {
     var element = document.getElementById("navbar");
     if (!element.classList.contains('responsive')) {
         element.classList.add("responsive");
