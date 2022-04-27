@@ -131,17 +131,22 @@ img.cr-club-comparison-image-mobile {
 @media screen and (max-width: 600px) {
     section.cr-club-comparison-section {
         height: auto;
+        margin-top: 0;
     }
     .cr-club-comparison-details-container {
         display: block;
-        width: 86%;
+        width: 100%;
         margin: 0 auto;
-        padding: 150px 0;
+        padding: 0;
+        height: 1600px;
+        background-size: 600px;
+        background-position: 35% 100%;
     }
     .cr-club-comparison-title {
-        font-size: 28px;
+        font: normal normal bold 28px/36px Termina;
+        letter-spacing: -0.28px;
         margin: 0;
-        padding: 20px 0;
+        padding: 30px 0;
     }
     .cr-club-comparison-image {
         display: none;
@@ -150,21 +155,60 @@ img.cr-club-comparison-image-mobile {
         display: block;
     }
     .cr-club-comparison-content {
-        width: 100%;
+        width: 85%;
+        margin: auto;
         display: block;
-        height: 100vh;
-    }
-    .cr-resorts-container {
-        margin: 0;
+        height: 100%;
     }
     .cr-club-comparison-details {
         display: block;
     }
+    .cr-club-comparison-description {
+        font: normal normal normal 16px/26px Poppins;
+        letter-spacing: 0px;
+    }
+    .cr-resorts-container {
+        margin-top: -340px;
+        background-color: #EBEBEB;
+        background-image: url(../img/club-comparison-background.png);
+        background-repeat: no-repeat;
+        height: 1070px;
+        background-size: 600px;
+        background-position: 35% 100%;
+    }
+    .cr-resorts-title {
+        font: normal normal bold 28px/36px Termina;
+        letter-spacing: -0.28px;
+    }
     .cr-resorts-description {
         font-size: 14px;
+        flex-direction: column;
+        font: normal normal normal 16px/26px Poppins;
+        letter-spacing: 0px;
+        gap: 40px;
     }
-    .cr-club-comparison-description {
-        font-size: 16px;
+
+    .cr-resorts-description ul {
+        padding-left: 1rem;
+    }
+
+    .cr-resorts-description ul li {
+        min-width: 48%;
+        margin-right: 0;
+        display: list-item;
+    }
+    
+    /* .cr-resorts-description ul li::before {
+        content: "\2022";
+        color: #F47828;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    } */
+    
+    .cr-resorts-description ul li:nth-child(3n+1) {
+        min-width: 48%;
     }
 }
 
