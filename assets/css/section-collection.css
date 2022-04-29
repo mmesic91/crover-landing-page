@@ -192,3 +192,97 @@
         background: #F47828;
     }
 }
+
+
+/* Large Phones and tablets */
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #ntf-collection {
+        display: none;
+    }
+    #ntf-collection-mobile {
+        display: flex;
+    }
+    #ntf-collection-mobile ul.splide__pagination.splide__pagination--ltr {
+        display: flex;
+    }
+    .cr-collection-section {
+        width: 85%;
+        margin-top: 100px;
+    }
+    .cr-collection-title {
+        font: normal normal bold 35px/36px Termina;
+        letter-spacing: -0.28px;
+    }
+    .cr-collection-description {
+        width: 100%;
+        font: normal normal normal 20px/35px Poppins;
+        letter-spacing: -0.16px;
+        margin-top: 10px;
+    }
+    .cr-collection-cards {
+        margin-top: 30px;
+        overflow-x: initial !important;
+    }
+    #ntf-collection-mobile .cr-collection-card {
+        min-width: 315px;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #ntf-collection-mobile .cr-collection-cards-slider-wrapper {
+        margin-right: 0 !important;
+    }
+    #ntf-collection-mobile .splide__pagination__page {
+        height: 16px;
+        width: 16px;
+    }
+    #ntf-collection-mobile .splide__pagination__page.is-active {
+        background: #F47828;
+    }
+}
+
+
+/* tables, laptop smaller screens */
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {}
+
+
+/* Laptop */
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {}
+
+
+/* Laptop bigger */
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+
+/* ----------- Laptop Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .cr-events-title {
+        font-size: 50px;
+    }
+    .cr-events-subtitle {
+        font-size: 50px;
+    }
+    /* .cr-events-circle {
+        background-size: cover;
+        width: 80px;
+        height: 80px;
+        left: 180px;
+    } */
+    .cr-events-note {
+        font-size: 20px;
+    }
+    .cr-events-bottom-img {
+        position: absolute;
+        width: 80%;
+        right: 0;
+    }
+    .cr-events-auction {
+        font-size: 21px;
+    }
+}
