@@ -216,10 +216,15 @@ section.cr-roadmap-section {
 
 @media screen and (max-width: 600px) {
     section.cr-roadmap-section {
-        background: linear-gradient(to bottom, #EAEAEA, #F7F6F5 50%, #F7F6F5);
+        background: none;
     }
     .cr-roadmap-container {
-        margin: 50px 0;
+        padding: 50px 0;
+        background: #ebebeb;
+        margin-top: 50px;
+    }
+    .cr-roadmap-activations {
+        background: #ebebeb;
     }
     .cr-roadmap-content {
         display: block;
@@ -299,7 +304,7 @@ section.cr-roadmap-section {
         background: #F47828;
     }
     #roadmapEvents ul.splide__list {
-        height: 570px;
+        height: 610px;
     }
 }
 
