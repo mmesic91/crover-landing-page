@@ -79,9 +79,9 @@ let timeCounter = function(date, elementId) {
     }, 1000);
 }
 
-timeCounter("May 16, 2022 13:05:25", "cr-header-card-counter");
-timeCounter("May 16, 2022 13:05:25", "cr-header-card-counter-1");
-timeCounter("May 16, 2022 13:05:25", "cr-header-card-counter-2");
+timeCounter("May 17, 2022 13:05:25", "cr-header-card-counter");
+timeCounter("May 17, 2022 13:05:25", "cr-header-card-counter-1");
+timeCounter("May 17, 2022 13:05:25", "cr-header-card-counter-2");
 
 
 // ntf collection slider
