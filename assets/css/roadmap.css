@@ -411,16 +411,16 @@ section.cr-roadmap-section {
 
 @media only screen and (min-width: 769px) and (max-width: 900px) {
     section#roadmap {
-        margin-top: -50px;
+        margin-top: -200px;
         background: none;
     }
     .cr-roadmap-container {
         padding: 50px 0;
-        background: #edefef;
+        background: #ebebeb;
         margin-top: 50px;
     }
     .cr-roadmap-activations {
-        background: #edefef;
+        background: #ebebeb;
     }
     .cr-roadmap-content {
         display: block;
@@ -509,7 +509,7 @@ section.cr-roadmap-section {
 
 @media only screen and (min-width: 901px) and (max-width: 1024px) {
     section#roadmap {
-        margin-top: -50px;
+        margin-top: -400px;
         background: none;
     }
     .cr-roadmap-container {
@@ -576,7 +576,7 @@ section.cr-roadmap-section {
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     section#roadmap {
-        margin-top: -50px;
+        margin-top: -400px;
         background: none;
     }
     .cr-roadmap-container {
@@ -642,6 +642,9 @@ section.cr-roadmap-section {
 /* ----------- Laptop Non-Retina Screens ----------- */
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    section.cr-roadmap-section {
+        margin-top: -170px;
+    }
     .cr-roadmap-big-title {
         font-size: 100px;
     }

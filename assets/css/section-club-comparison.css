@@ -41,13 +41,13 @@
     font: normal normal bold 40px/48px Termina;
     letter-spacing: -0.4px;
     color: #F47828;
-    margin-right: -12%;
+    margin-right: -95px;
 }
 
 .cr-club-comparison-description {
     text-align: left;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 32px;
     letter-spacing: 0px;
     color: #484844;
@@ -82,7 +82,7 @@
 
 .cr-resorts-description {
     display: flex;
-    font: normal normal normal 24px/38px Poppins;
+    font: normal normal normal 21px/38px Poppins;
     letter-spacing: -0.24px;
     color: #041A14;
     gap: 100px;
@@ -117,7 +117,7 @@
 }
 
 .cr-resorts-description ul li:nth-child(3n+1) {
-    min-width: 40%;
+    min-width: 43%;
 }
 
 .cr-club-comparison-image-mobile {
@@ -128,7 +128,7 @@ img.cr-club-comparison-image-mobile {
     width: 100%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     section.cr-club-comparison-section {
         height: auto;
         margin-top: 0;
@@ -211,43 +211,178 @@ img.cr-club-comparison-image-mobile {
 
 /* Large Phones and tablets */
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .cr-club-comparison-image-mobile {
+        display: block;
+        width: unset !important;
+        height: 400px;
+        margin: auto;
+    }
+}
 
 
 /* tables, laptop smaller screens */
 
-@media only screen and (min-width: 769px) and (max-width: 900px) {}
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    .cr-club-comparison-details {
+        gap: 30px;
+    }
+    .cr-club-comparison-title {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    .cr-club-comparison-description,
+    .cr-resorts-description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .cr-club-comparison-section {
+        height: 1500px;
+    }
+    .cr-club-comparison-image {
+        height: 400px;
+        padding: 30px;
+    }
+    .cr-resorts-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .cr-resorts-description ul li {
+        min-width: 50% !important;
+        margin-right: 0;
+    }
+    .cr-resorts-container {
+        margin-top: -730px;
+    }
+
+    .cr-club-comparison-details-container {
+        background-position: 100% 65%;
+    }
+
+    .cr-resorts-description {
+        gap: 40px;
+    }
+}
 
 
 /* Laptop and some tablets */
 
-@media only screen and (min-width: 901px) and (max-width: 1024px) {}
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .cr-club-comparison-details {
+        gap: 30px;
+    }
+    .cr-club-comparison-title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .cr-club-comparison-description,
+    .cr-resorts-description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .cr-club-comparison-section {
+        height: 1750px;
+    }
+    .cr-club-comparison-image {
+        height: 550px;
+    }
+    .cr-resorts-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .cr-resorts-description ul li {
+        min-width: 50% !important;
+        margin-right: 0;
+    }
+    .cr-resorts-container {
+        margin-top: -850px;
+    }
+
+    .cr-club-comparison-details-container {
+        background-position: 100% 65%;
+    }
+
+    .cr-club-comparison-section-wave {
+        top: -98px;
+    }
+
+    .cr-resorts-description {
+        gap: 40px;
+    }
+}
 
 
 /* Laptop bigger */
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .cr-club-comparison-title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .cr-club-comparison-description,
+    .cr-resorts-description {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .cr-club-comparison-section {
+        height: 1850px;
+    }
+    .cr-club-comparison-image {
+        height: 550px;
+    }
+    .cr-resorts-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .cr-resorts-description ul li {
+        min-width: 50% !important;
+        margin-right: 0;
+    }
+    .cr-resorts-container {
+        margin-top: -950px;
+    }
+
+    .cr-club-comparison-details-container {
+        background-position: 100% 65%;
+    }
+
+    .cr-club-comparison-section-wave {
+        top: -98px;
+    }
+}
 
 
 /* ----------- Non-Retina Screens ----------- */
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1600px) {
     .cr-club-comparison-title {
-        font-size: 35px;
+        font-size: 30px;
+        line-height: 40px;
     }
-    .cr-club-comparison-description {
-        font-size: 21px;
+    .cr-club-comparison-description,
+    .cr-resorts-description {
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .cr-club-comparison-section {
+        height: 1850px;
+    }
+    .cr-club-comparison-image {
+        height: 550px;
     }
     .cr-resorts-title {
-        font-size: 35px;
+        font-size: 40px;
+        line-height: 50px;
     }
-    .cr-resorts-description {
-        font-size: 21px;
-    }
-    .cr-club-comparison-details-container {
-        height: 85%;
+    .cr-resorts-description ul li {
+        min-width: 50% !important;
+        margin-right: 0;
     }
     .cr-resorts-container {
-        margin-top: -800px;
+        margin-top: -950px;
+    }
+
+    .cr-club-comparison-details-container {
+        background-position: 100% 65%;
     }
 }

@@ -352,6 +352,7 @@ img.green-checkmark {
 
     .cr-mt-cards {
         display: flex;
+        width: 80%;
     }
 
     .cr-mt-promo-title {
@@ -361,6 +362,7 @@ img.green-checkmark {
     .cr-mt-promo-description {
         font-size: 14px;
         line-height: 26px;
+        width: 80%;
     }
 
     .cr-mt-promo-block {
@@ -387,6 +389,7 @@ img.green-checkmark {
 
     .cr-mt-cards {
         display: flex;
+        width: 80%;
     }
 
     tr.cr-mt-overview-table-header-type {
