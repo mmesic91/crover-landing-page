@@ -234,11 +234,13 @@ img.green-checkmark {
     padding: 0 25px;
     min-height: 55px;
     font-weight: bold;
+    font-size: 12px;
+    line-height: 19px;
     border-right: 1px dashed #A8A287;
 }
 .cr-mt-card-highlights-table tr td:first-of-type {
     width: 55%;
-    font: normal normal normal 14px/19px Poppins;
+    font: normal normal normal 12px/19px Poppins;
 }
 .cr-mt-card-highlights-table tr td:last-of-type {
     letter-spacing: 0px;
@@ -278,6 +280,7 @@ img.green-checkmark {
     .cr-mt-tiles-wrapper {
         width: 85%;
         flex-direction: column-reverse;
+        margin-bottom: 55px;
     }
     .cr-mt-tiles {
         gap: 20px;

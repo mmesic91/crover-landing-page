@@ -75,7 +75,7 @@
 .cr-footer-about-us {
     display: flex;
     flex-direction: column;
-    width: 36%;
+    width: 55%;
     gap: 30px;
 }
 
@@ -252,29 +252,175 @@
 
 /* Large Phones and tablets */
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .cr-footer-promo-title {
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .cr-footer-promo-description {
+        font-size: 15px;
+        line-height: 27px;
+    }
+
+    .cr-footer-promo-details {
+        margin: 160px auto 0; 
+    }
+
+    .cr-footer-btn-discord {
+        width: 155px;
+        height: 50px;
+        font: bold 15px/31px Poppins Bold;
+    }
+}
 
 
 /* tables, laptop smaller screens */
 
-@media only screen and (min-width: 769px) and (max-width: 900px) {}
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    .cr-footer-promo-title {
+        font-size: 48px;
+        line-height: 68px;
+    }
+    .cr-footer-promo-description {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .cr-footer-promo-details {
+        margin: 160px auto 0; 
+    }
+
+    .cr-footer-btn-discord {
+        width: 200px;
+        height: 60px;
+        font: bold 19px/31px Poppins Bold;
+    }
+}
 
 
 /* Laptop */
 
-@media only screen and (min-width: 901px) and (max-width: 1024px) {}
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .cr-footer-promo-title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .cr-footer-promo-description {
+        font-size: 20px;
+        line-height: 33px;
+    }
+
+    .cr-footer-promo-details {
+        margin: 160px auto 0; 
+    }
+
+    .cr-footer-btn-discord {
+        width: 200px;
+        height: 60px;
+        font: bold 19px/31px Poppins Bold;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .cr-footer-about-us {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .cr-footer-menu div:first-of-type,
+    .cr-footer-follow-us div:first-of-type {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .cr-footer-info {
+        font-size: 13px;
+        line-height: 17px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .cr-footer-content {
+        bottom: unset !important;
+        top: 50%;
+    }
+
+    .cr-footer-menu {
+        margin-top: 0;
+    }
+
+    .cr-footer-copyright {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .cr-footer-promo-title {
+        font-size: 53px;
+        line-height: 62px;
+    }
+    .cr-footer-promo-description {
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .cr-footer-about-us {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .cr-footer-menu div:first-of-type,
+    .cr-footer-follow-us div:first-of-type {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .cr-footer-info {
+        font-size: 14px;
+    }
+
+    .cr-footer-promo-details {
+        margin: 180px auto 0; 
+    }
+
+    .cr-footer-content {
+        gap: 30px;
+    }
+
+    .cr-footer-copyright {
+        font-size: 15px;
+    }
+}
 
 
 /* ----------- Laptop Non-Retina Screens ----------- */
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
     .cr-footer-promo-title {
-        font-size: 50px;
+        font-size: 55px;
+        line-height: 65px;
     }
     .cr-footer-promo-description {
-        font-size: 18px;
+        font-size: 22px;
+        line-height: 35px;
     }
     .cr-footer-about-us {
         width: 100%;
+    }
+
+    .cr-footer-menu div:first-of-type,
+    .cr-footer-follow-us div:first-of-type {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .cr-footer-info {
+        font-size: 15px;
+    }
+
+    .cr-footer-copyright {
+        font-size: 16px;
     }
 }
