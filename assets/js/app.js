@@ -19,22 +19,32 @@ let stickyNavbar = function() {
 
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function navigationHandler() {
-        console.log(window.pageYOffset)
-        console.log(navbarPosition)
-        console.log(window.scrollY)
         if (window.pageYOffset > navbarPosition || window.scrollY > 0) {
             navbar.classList.add("sticky");
         } else {
             navbar.classList.remove("sticky");
         }
     }
+
+    // fallback mobile scroll
+    if (
+        "IntersectionObserver" in window &&
+        "IntersectionObserverEntry" in window &&
+        "intersectionRatio" in window.IntersectionObserverEntry.prototype
+    ) {
+
+        let observer = new IntersectionObserver(entries => {
+            if (entries[0].boundingClientRect.y < 0) {
+                document.getElementById("navbar").classList.add("sticky");
+            } else {
+                document.getElementById("navbar").classList.remove("sticky");
+            }
+        });
+        observer.observe(document.querySelector("#top-of-site-pixel-anchor"));
+    }
 }
 
 stickyNavbar();
-
-// window.onscroll = function() {
-//     console.log("scroll");
-// };
 
 function triggerMobileMenuEvent() {
     var element = document.getElementById("navbar");
