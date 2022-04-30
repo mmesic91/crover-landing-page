@@ -282,6 +282,14 @@ ul.cr-mobile-nav-items>li>a {
     top: 0;
 }
 
+@-moz-document url-prefix() {
+
+    .cr-header-card {
+        background-image: url('../img/header-card-bg.PNG');
+    }
+
+}
+
 .cr-header-card-image {
     width: 100%;
     height: 65%;
