@@ -101,6 +101,9 @@
         transform: translate(-50%, 0);
         bottom: -100px;
     }
+    .cr-instagram-promo-image {
+        height: 90vw;
+    }
     .cr-instagram-subtitle {
         font-size: 22px;
         margin-top: 120px;
@@ -144,6 +147,9 @@
         font-size: 22px;
         margin-top: 120px;
     }
+    .cr-instagram-promo-image {
+        height: 90vw;
+    }
     .cr-instagram-images {
         margin-left: -175px;
     }
@@ -182,6 +188,9 @@
     .cr-instagram-subtitle {
         font-size: 22px;
         margin-top: 120px;
+    }
+    .cr-instagram-promo-image {
+        height: 90vw;
     }
     .cr-instagram-images {
         margin-left: -175px;
