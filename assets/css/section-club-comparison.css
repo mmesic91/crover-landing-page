@@ -191,20 +191,15 @@ img.cr-club-comparison-image-mobile {
         padding-left: 1rem;
     }
     .cr-resorts-description ul li {
-        min-width: 48%;
+        min-width: 40%;
         margin-right: 0;
         display: list-item;
     }
-    /* .cr-resorts-description ul li::before {
-        content: "\2022";
-        color: #F47828;
-        font-weight: bold;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-    } */
+    .cr-resorts-description ul li:nth-child(2n) {
+        min-width: 48% !important;
+    }
     .cr-resorts-description ul li:nth-child(3n+1) {
-        min-width: 48%;
+        min-width: 40%;
     }
 }
 
