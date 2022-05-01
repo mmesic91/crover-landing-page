@@ -59,39 +59,58 @@ let timeCounter = function(date, elementId) {
     // Set the date we're counting down to
     var countDownDate = new Date(date).getTime();
 
+    // elements where value needs to be updated
+
+    let day = document.getElementById(elementId + "-day");
+    let hour = document.getElementById(elementId + "-hour");
+    let min = document.getElementById(elementId + "-min");
+    let sec = document.getElementById(elementId + "-sec");
+
     // Update the count down every 1 second
-    var x = setInterval(function() {
 
-        // Get today's date and time
-        var now = new Date().getTime();
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+    if (day && hour && min && sec) {
+        var x = setInterval(function() {
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            // Get today's date and time
+            var now = new Date().getTime();
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
 
-        //If the count down is finished, write some text
-        if (distance > 0) {
-            document.getElementById(elementId + "-day").innerHTML = days;
-            document.getElementById(elementId + "-hour").innerHTML = hours;
-            document.getElementById(elementId + "-min").innerHTML = minutes;
-            document.getElementById(elementId + "-sec").innerHTML = seconds;
-        } else {
-            clearInterval(x);
-            document.getElementById(elementId + "-day").innerHTML = "0";
-            document.getElementById(elementId + "-hour").innerHTML = "0";
-            document.getElementById(elementId + "-min").innerHTML = "0";
-            document.getElementById(elementId + "-sec").innerHTML = "0";
-        }
-    }, 1000);
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            //If the count down is finished, write some text
+            if (distance > 0) {
+                day.innerHTML = days;
+                hour.innerHTML = hours;
+                min.innerHTML = minutes;
+                sec.innerHTML = seconds;
+            } else {
+                clearInterval(x);
+                day.innerHTML = "0";
+                hour.innerHTML = "0";
+                min.innerHTML = "0";
+                sec.innerHTML = "0";
+            }
+        }, 1000);
+    }
 }
 
 timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter");
 timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-1");
 timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-2");
+timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-card-1");
+timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-card-2");
+timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-card-3");
+timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-card-4");
+timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-mobile-card-1");
+timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-mobile-card-2");
+timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-mobile-card-3");
+timeCounter("May 17, 2022 00:00:00", "cr-header-card-counter-mobile-card-4");
+
 
 
 // ntf collection slider
