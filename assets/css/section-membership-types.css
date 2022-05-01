@@ -193,7 +193,8 @@ img.green-checkmark {
     flex-direction: column;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0px;
-    padding: 30px;
+    padding: 25px;
+    padding-bottom: 0;
 }
 .cr-mt-card-title {
     font: normal normal bold 24px/29px Termina;
@@ -209,17 +210,39 @@ img.green-checkmark {
     font: normal normal bold 16px/25px Termina;
     letter-spacing: -0.32px;
     color: #A8A287;
-    margin: 30px 0;
+    margin: 30px 0 20px;
+}
+.cr-mt-card-highlights.accordion {
+    margin: 0 -25px;
+}
+.cr-mt-card-highlights .accordion-item {
+    border: none;
+}
+.cr-mt-card-highlights .accordion-collapse {
+    background-color: #FAFAFA;
 }
 .cr-mt-card-highlights-label {
     font: normal normal 600 18px/24px Poppins;
     letter-spacing: 0px;
     color: #04211B;
-    margin-top: 10px;
+    font-weight: bold;
+}
+.cr-mt-card-highlights-label .accordion-button {
+    font-size: 18px;
+    padding: 25px;
+    background-color: #FAFAFA;
+}
+.cr-mt-card-highlights-label .accordion-button:not(.collapsed) {
+    color: inherit;
+    background-color: #FAFAFA;
+    box-shadow: none;
+}
+.cr-mt-card-highlights-label .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 .cr-mt-card-highlights-table {
     display: block;
-    padding-top: 40px;
+    padding-top: 10px;
     margin: 0;
 }
 .cr-mt-card-highlights-table tbody {
