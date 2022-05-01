@@ -115,12 +115,15 @@
     display: flex;
     gap: 10px;
     margin: auto;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cr-mt-tile {
     display: flex;
-    flex: 1 1 0;
     flex-direction: column;
+    width: 205px;
     height: 295px;
     gap: 10px;
     background-color: #F7F6F5;
@@ -152,7 +155,7 @@
 .cr-mt-tile-price,
 .cr-mt-tile-description {
     padding: 0 25px;
-    font: normal normal normal 16px/21px Poppins;
+    font: normal normal normal 15px/21px Poppins;
     letter-spacing: 0px;
     color: #484844;
 }
