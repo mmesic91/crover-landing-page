@@ -190,6 +190,12 @@
     padding-bottom: 20px;
 }
 
+.cr-footer-menu a {
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+}
+
 @media screen and (max-width: 600px) {
     .desktop-footer-wave {
         display: none;
