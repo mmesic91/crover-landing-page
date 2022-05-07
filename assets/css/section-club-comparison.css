@@ -381,3 +381,9 @@ img.cr-club-comparison-image-mobile {
         background-position: 100% 65%;
     }
 }
+
+@media screen and (min-device-width: 1601px) and (max-device-width: 1830px) {
+    .cr-club-comparison-details-container {
+        background-position: 100% 80%;
+    }
+}
