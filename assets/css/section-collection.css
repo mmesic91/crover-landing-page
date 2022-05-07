@@ -262,27 +262,4 @@
 /* ----------- Laptop Non-Retina Screens ----------- */
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-    .cr-events-title {
-        font-size: 50px;
-    }
-    .cr-events-subtitle {
-        font-size: 50px;
-    }
-    /* .cr-events-circle {
-        background-size: cover;
-        width: 80px;
-        height: 80px;
-        left: 180px;
-    } */
-    .cr-events-note {
-        font-size: 20px;
-    }
-    .cr-events-bottom-img {
-        position: absolute;
-        width: 80%;
-        right: 0;
-    }
-    .cr-events-auction {
-        font-size: 21px;
-    }
 }

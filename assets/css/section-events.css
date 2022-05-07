@@ -117,7 +117,7 @@
 .cr-events-grey-box {
     background-color: #edefef;
     position: absolute;
-    height: 65%;
+    height: 75%;
     width: 100%;
     bottom: 0;
     z-index: -1;
@@ -133,7 +133,11 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 1em;
-    width: 33%;
+    width: 40%;
+}
+
+.cr-events-auction p {
+    margin-bottom: 0;
 }
 
 span.cr-events-auction-time {
@@ -141,7 +145,7 @@ span.cr-events-auction-time {
 }
 
 .cr-events-bottom-img-wrapper {
-    width: 66%;
+    flex: 1 1 0;
     position: relative;
     height: 170px;
 }
@@ -150,7 +154,7 @@ span.cr-events-auction-time {
     position: absolute;
     right: 0;
     top: -90px;
-    width: 90%;
+    width: 102%;
 }
 
 
@@ -244,7 +248,7 @@ span.cr-events-auction-time {
         top: 0;
     }
     .cr-events-grey-box {
-        height: 80%;
+        height: 75%;
     }
 }
 
@@ -325,7 +329,7 @@ span.cr-events-auction-time {
         top: 0;
     }
     .cr-events-grey-box {
-        height: 80%;
+        height: 75%;
     }
 }
 
@@ -406,7 +410,7 @@ span.cr-events-auction-time {
         top: 0;
     }
     .cr-events-grey-box {
-        height: 80%;
+        height: 75%;
     }
 }
 
@@ -414,29 +418,39 @@ span.cr-events-auction-time {
 /* Laptop */
 
 @media only screen and (min-width: 901px) and (max-width: 1024px) {
+    .cr-events-notes {
+        margin-top: 100px;
+    }
+
     .cr-events-title,
     .cr-events-subtitle {
-        font: normal normal bold 55px/65px Termina;
-        text-align: left;
+        font-size: 46px;
+        line-height: 58px;
     }
     .cr-events-grey-box {
-        height: 80%;
+        height: 75%;
     }
     .cr-events-logo {
         width: 30%;
     }
     .cr-events-note {
-        font: normal normal normal 22px/36px Poppins;
+        font-size: 15px;
+        line-height: 25px;
     }
     .cr-events-auction {
-        font-size: 22px;
-        width: 100%;
+        font-size: 15px;
+        line-height: 30px;
+        width: 45%;
     }
     .cr-events-bottom-img {
-        position: absolute;
-        right: 0;
-        top: 72px;
-        width: 625px;
+        top: -25px;
+        width: 111%;
+    }
+
+    .cr-events-note::before {
+        width: 50px;
+        height: 50px;
+        background-size: 54px 54px;
     }
 }
 
@@ -444,28 +458,30 @@ span.cr-events-auction-time {
 /* Laptop bigger */
 
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .cr-events-title,
     .cr-events-subtitle {
-        font: normal normal bold 55px/65px Termina;
-        text-align: left;
+        font-size: 48px;
+        line-height: 60px;
     }
+
     .cr-events-grey-box {
-        height: 80%;
+        height: 75%;
     }
     .cr-events-logo {
         width: 30%;
     }
     .cr-events-note {
-        font: normal normal normal 22px/36px Poppins;
+        font-size: 17px;
+        line-height: 30px;
     }
     .cr-events-auction {
-        font-size: 22px;
-        width: 100%;
+        font-size: 17px;
+        line-height: 33px;
+        width: 45%;
     }
     .cr-events-bottom-img {
-        position: absolute;
-        right: 0;
-        top: 72px;
-        width: 625px;
+        top: -25px;
+        width: 111%;
     }
 }
 
@@ -486,15 +502,18 @@ span.cr-events-auction-time {
         left: 180px;
     } */
     .cr-events-note {
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 35px;
     }
     .cr-events-bottom-img {
         position: absolute;
-        width: 95%;
         right: 0;
-        top: 0px;
+        top: -60px;
+        width: 111%;
     }
     .cr-events-auction {
-        font-size: 21px;
+        font-size: 18px;
+        line-height: 35px;
+        width: 45%;
     }
 }
