@@ -118,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ntf collection slider
     var ntfCollection = new Splide('#ntf-collection', {
-        type: 'loop',
         height: '10rem',
         focus: 'center',
         autoWidth: true,
@@ -131,7 +130,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // roadmap events slider
     var roadmapEvents = new Splide('#roadmapEvents', {
-        type: 'loop',
         height: '10rem',
         focus: 'center',
         autoWidth: true,
@@ -139,7 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
     roadmapEvents.mount();
 
     var roadmapActivations = new Splide('#roadmapActivations', {
-        type: 'loop',
         height: '10rem',
         focus: 'center',
         autoWidth: true,
@@ -147,17 +144,14 @@ document.addEventListener('DOMContentLoaded', function() {
     roadmapActivations.mount();
 
     // membership types
-
     var membershipTypesMobile = new Splide('#membershipTypesMobile', {
-        type: 'loop',
-        padding: '5rem',
+
     });
     membershipTypesMobile.mount();
 
 
     // instagram slider
     var crInstagramSlider = new Splide('#crInstagramSlider', {
-        type: 'loop',
         height: '10rem',
         focus: 'center',
         autoWidth: true,
