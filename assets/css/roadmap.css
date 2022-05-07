@@ -18,12 +18,13 @@ section.cr-roadmap-section {
     border-left: 4px dotted rgba(244, 120, 40, 0.3);
     font-family: 'termina';
     padding-top: 60px;
+    height: 100vh;
 }
 
 .cr-roadmap-box-wrapper {
     margin-left: 10%;
     margin-right: 5%;
-    height: 86vh;
+    height: inherit;
 }
 
 .cr-roadmap-box-date {
@@ -31,6 +32,7 @@ section.cr-roadmap-section {
     font-size: 34px;
     color: #A8A287;
     opacity: 0.4;
+    height: 10%;
 }
 
 .cr-roadmap-box-title {
@@ -38,6 +40,7 @@ section.cr-roadmap-section {
     font-size: 38px;
     color: #04211B;
     padding: 1em 0;
+    height: 20%;
 }
 
 .cr-roadmap-box-description {
@@ -45,10 +48,12 @@ section.cr-roadmap-section {
     color: #041A14;
     padding: 1em 0;
     margin-right: 20%;
+    height: 35%;
 }
 
 .cr-roadmap-box-image {
     margin-right: 20%;
+    height: 35%;
 }
 
 .cr-roadmap-box-image img {
@@ -229,6 +234,7 @@ section.cr-roadmap-section {
     .cr-roadmap-content {
         display: block;
         margin-left: 0;
+        margin-top: 200px;
     }
     div#roadmapEvents-track {
         width: 100%;
@@ -304,6 +310,9 @@ section.cr-roadmap-section {
         background: #F47828;
     }
     #roadmapEvents ul.splide__list {
+        /* height: 610px; */
+    }
+    .cr-roadmap-box {
         height: 610px;
     }
 }
@@ -326,6 +335,7 @@ section.cr-roadmap-section {
     .cr-roadmap-content {
         display: block;
         margin-left: 0;
+        margin-top: 200px;
     }
     div#roadmapEvents-track {
         width: 100%;
@@ -400,7 +410,7 @@ section.cr-roadmap-section {
     #roadmapActivations .splide__pagination__page.is-active {
         background: #F47828;
     }
-    #roadmapEvents ul.splide__list {
+    .cr-roadmap-box {
         height: 610px;
     }
 }
@@ -424,6 +434,7 @@ section.cr-roadmap-section {
     .cr-roadmap-content {
         display: block;
         margin-left: 0;
+        margin-top: 200px;
     }
     div#roadmapEvents-track {
         width: 100%;
@@ -522,6 +533,7 @@ section.cr-roadmap-section {
     .cr-roadmap-content {
         display: flex;
         margin-left: 7%;
+        margin-top: 100px;
     }
     .cr-roadmap-activations {
         background-color: #edefef;
@@ -565,8 +577,9 @@ section.cr-roadmap-section {
     #roadmapEvents .splide__pagination__page.is-active {
         background: #F47828;
     }
-    #roadmapEvents ul.splide__list {
-        height: 880px;
+    #roadmapEvents li.splide__slide {
+        width: 50%;
+        height: 100% !important;
     }
 }
 
@@ -589,6 +602,7 @@ section.cr-roadmap-section {
     .cr-roadmap-content {
         display: flex;
         margin-left: 7%;
+        margin-top: 100px;
     }
     .cr-roadmap-activations {
         background-color: #edefef;
@@ -632,8 +646,9 @@ section.cr-roadmap-section {
     #roadmapEvents .splide__pagination__page.is-active {
         background: #F47828;
     }
-    #roadmapEvents ul.splide__list {
-        height: 880px;
+    #roadmapEvents li.splide__slide {
+        width: 50%;
+        height: 100% !important;
     }
 }
 
@@ -646,6 +661,9 @@ section.cr-roadmap-section {
     }
     .cr-roadmap-big-title {
         font-size: 100px;
+    }
+    .cr-roadmap-content {
+        margin-top: 100px;
     }
     .cr-roadmap-small-title {
         font-size: 39px;
