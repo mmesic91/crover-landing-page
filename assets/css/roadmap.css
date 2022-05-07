@@ -173,13 +173,13 @@ section.cr-roadmap-section {
 }
 
 #roadmapEvents li.splide__slide {
-    width: 30%;
+    width: 33%;
     height: 100% !important;
 }
 
 #roadmapEvents-track {
     width: 100%;
-    margin-left: -5%;
+    /* margin-left: -10%; */
 }
 
 #roadmapEvents ul.splide__pagination {
@@ -654,13 +654,13 @@ section.cr-roadmap-section {
         font-size: 21px;
     }
     .cr-roadmap-box-date {
-        font-size: 29px;
+        font-size: 25px;
     }
     .cr-roadmap-box-title {
-        font-size: 29px;
+        font-size: 25px;
     }
     .cr-roadmap-box-description {
-        font-size: 20px;
+        font-size: 16px;
     }
     .cr-roadmap-activations-title {
         font-size: 25px;

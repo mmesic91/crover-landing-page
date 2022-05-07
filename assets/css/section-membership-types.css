@@ -191,6 +191,7 @@ img.green-checkmark {
     margin: auto;
     margin-top: 40px;
 }
+
 .cr-mt-card {
     display: flex;
     flex-direction: column;
@@ -199,62 +200,76 @@ img.green-checkmark {
     padding: 25px;
     padding-bottom: 0;
 }
+
 .cr-mt-card-title {
     font: normal normal bold 24px/29px Termina;
     letter-spacing: -0.24px;
     color: #A8A287;
 }
+
 .cr-mt-card-date {
     font: normal normal 600 18px/24px Poppins;
     letter-spacing: 0px;
     color: #A8A287;
 }
+
 .cr-mt-card-price {
     font: normal normal bold 16px/25px Termina;
     letter-spacing: -0.32px;
     color: #A8A287;
     margin: 30px 0 20px;
 }
+
 .cr-mt-card-highlights.accordion {
     margin: 0 -25px;
 }
+
 .cr-mt-card-highlights .accordion-item {
     border: none;
 }
+
 .cr-mt-card-highlights .accordion-collapse {
     background-color: #FAFAFA;
 }
+
 .cr-mt-card-highlights-label {
     font: normal normal 600 18px/24px Poppins;
     letter-spacing: 0px;
     color: #04211B;
     font-weight: bold;
 }
+
 .cr-mt-card-highlights-label .accordion-button {
     font-size: 18px;
     padding: 25px;
     background-color: #FAFAFA;
 }
+
 .cr-mt-card-highlights-label .accordion-button:not(.collapsed) {
     color: inherit;
     background-color: #FAFAFA;
     box-shadow: none;
 }
+
 .cr-mt-card-highlights-label .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+
 .cr-mt-card-highlights-table {
     display: block;
     padding-top: 10px;
     margin: 0;
 }
+
 .cr-mt-card-highlights-table tbody {
     display: flex;
     flex-direction: column;
 }
+
 .cr-mt-card-highlights-table tr {
     display: flex;
 }
+
 .cr-mt-card-highlights-table td {
     display: flex;
     padding: 0 25px;
@@ -264,21 +279,34 @@ img.green-checkmark {
     line-height: 19px;
     border-right: 1px dashed #A8A287;
 }
+
 .cr-mt-card-highlights-table tr td:first-of-type {
     width: 55%;
     font: normal normal normal 12px/19px Poppins;
 }
+
 .cr-mt-card-highlights-table tr td:last-of-type {
     letter-spacing: 0px;
     border-right: none;
     font-weight: bold;
 }
+
 .cr-mt-card-highlights-table tbody td {
     font: normal normal normal 18px/24px;
     align-items: center;
 }
+
 .cr-mt-card-highlights-table tbody tr:nth-child(2n+1) {
     background-color: #F7F6F5;
+}
+
+ul#membershipTypesMobile-list {
+    width: 100%;
+}
+
+#membershipTypesMobile .splide__track li {
+    height: 320px;
+    width: 270px !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -313,6 +341,7 @@ img.green-checkmark {
     }
     .cr-mt-tile {
         min-width: 256px;
+        margin: 0 auto;
     }
     .cr-mt-tile-title {
         border-radius: 15px 15px 0 0;
@@ -353,11 +382,11 @@ img.green-checkmark {
         display: flex;
     }
     #membershipTypesMobile .splide__track li {
-        width: calc(10%) !important;
-        padding: 10px;
+        /* width: calc(60%) !important;
+        padding: 10px; */
     }
     #membershipTypesMobile .splide__track {
-        margin-left: 0;
+        margin-left: 7%;
     }
     #membershipTypesMobile .splide__pagination {
         bottom: -2em;
@@ -378,12 +407,10 @@ img.green-checkmark {
     .cr-mt-overview-wrapper {
         display: none;
     }
-
     .cr-mt-cards {
         display: flex;
         width: 80%;
     }
-
     .cr-mt-promo-title {
         font-size: 45px;
         line-height: 55px;
@@ -393,7 +420,6 @@ img.green-checkmark {
         line-height: 26px;
         width: 80%;
     }
-
     .cr-mt-promo-block {
         height: 650px;
     }
@@ -411,16 +437,13 @@ img.green-checkmark {
         font-size: 16px;
         line-height: 30px;
     }
-
     .cr-mt-overview-wrapper {
         display: none;
     }
-
     .cr-mt-cards {
         display: flex;
         width: 80%;
     }
-
     tr.cr-mt-overview-table-header-type {
         font-size: 13px;
         line-height: 17px;
@@ -430,11 +453,9 @@ img.green-checkmark {
         font-size: 12px;
         line-height: 15px;
     }
-
     .cr-mt-overview-table td {
         font-size: 10px;
     }
-
     .cr-mt-promo-block {
         height: 650px;
     }
@@ -461,7 +482,6 @@ img.green-checkmark {
         font-size: 16px;
         line-height: 30px;
     }
-
     tr.cr-mt-overview-table-header-type {
         font-size: 13px;
         line-height: 17px;
@@ -471,7 +491,6 @@ img.green-checkmark {
         font-size: 12px;
         line-height: 15px;
     }
-
     .cr-mt-overview-table td {
         font-size: 10px;
     }
@@ -489,7 +508,6 @@ img.green-checkmark {
         font-size: 20px;
         line-height: 34px;
     }
-
     tr.cr-mt-overview-table-header-type {
         font-size: 16px;
         line-height: 20px;
@@ -499,11 +517,9 @@ img.green-checkmark {
         font-size: 15px;
         line-height: 20px;
     }
-
     .cr-mt-overview-table td {
         font-size: 13px;
     }
-
     /* .cr-mt-tile {
         height: 260px;
     }
