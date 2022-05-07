@@ -116,7 +116,6 @@
     gap: 10px;
     margin: auto;
     width: 100%;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -519,5 +518,11 @@ ul#membershipTypesMobile-list {
     }
     .cr-mt-overview-table td {
         font-size: 13px;
+    }
+}
+
+@media screen and (min-device-width: 1601px) {
+    .cr-mt-tile {
+        flex: 1 1 0;
     }
 }
