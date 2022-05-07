@@ -34,7 +34,7 @@
     font: normal normal normal 24px/40px Poppins;
     letter-spacing: 0px;
     color: #fcfcfc;
-    width: 60%;
+    width: 65%;
 }
 
 .cr-footer-btn-discord {
@@ -318,6 +318,7 @@
     .cr-footer-promo-description {
         font-size: 18px;
         line-height: 30px;
+        width: 60%;
     }
     .cr-footer-promo-details {
         margin: 160px auto 0;
@@ -430,6 +431,10 @@
 /* ----------- Laptop Non-Retina Screens ----------- */
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .cr-footer-content {
+        bottom: -40px;
+    }
+    
     .cr-footer-promo-title {
         font-size: 55px;
         line-height: 65px;
