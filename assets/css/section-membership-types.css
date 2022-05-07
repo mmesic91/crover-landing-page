@@ -309,7 +309,7 @@ ul#membershipTypesMobile-list {
     width: 270px !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-device-width: 600px) {
     .cr-mt-promo-block {
         height: 628px;
         background-position: center;
@@ -403,7 +403,7 @@ ul#membershipTypesMobile-list {
 
 /* Large Phones and tablets */
 
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
     .cr-mt-overview-wrapper {
         display: none;
     }
@@ -428,7 +428,7 @@ ul#membershipTypesMobile-list {
 
 /* tables, laptop smaller screens */
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
     .cr-mt-promo-title {
         font-size: 50px;
         line-height: 60px;
@@ -469,7 +469,7 @@ ul#membershipTypesMobile-list {
 
 /* Laptop */
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
     .cr-mt-overview-table th,
     .cr-mt-overview-table td {
         min-height: 50px;
@@ -520,25 +520,4 @@ ul#membershipTypesMobile-list {
     .cr-mt-overview-table td {
         font-size: 13px;
     }
-    /* .cr-mt-tile {
-        height: 260px;
-    }
-
-    .cr-mt-tile-title {
-        padding: 10px;
-    }
-    
-    .cr-mt-tile-title span {
-        font: normal normal bold 14px/23px Termina;
-    }
-    
-    .cr-mt-tile-title span:first-of-type {
-        font: normal normal bold 17px/26px Termina;
-    }
-    
-    .cr-mt-tile-price,
-    .cr-mt-tile-description {
-        padding: 0 10px;
-        font: normal normal normal 13px/18px Poppins;
-    } */
 }
