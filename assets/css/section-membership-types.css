@@ -5,7 +5,7 @@
 .cr-mt-promo-block {
     display: flex;
     height: 950px;
-    background: linear-gradient( 119deg, #04211b -5%, #051f1a76 53%, #051e1a00 100%), url(../img/membership-types-promo.png);
+    background: linear-gradient( 119deg, #04211b -5%, #051f1a76 53%, #051e1a00 100%), url(../img/membership-types-promo.jpg);
     background-size: cover;
 }
 
